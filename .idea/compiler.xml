@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Jabberpoint" target="19" />
+      <module name="Jabberpoint" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
