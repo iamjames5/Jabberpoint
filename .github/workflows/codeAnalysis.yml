@@ -1,6 +1,10 @@
 name: Code Analysis
 
-on: [push]
+on:
+  push:
+      branches: [ "main" ]
+  pull_request:
+      branches: [ "main" ]
 
 jobs:
   code-analysis:
@@ -15,14 +19,11 @@ jobs:
       with:
         java-version: 17
 
-    - name: Run Maven FindBugs
-      run: mvn findbugs:check
+    - name: Build with Maven and Run PMD
+      run: mvn clean verify site -Dmaven.test.skip=true
 
-    - name: Run FindBugs Maven Plugin
-      run: mvn findbugs:findbugs
-      
-    - name: Upload FindBugs report
+    - name: Upload PMD report
       uses: actions/upload-artifact@v2
       with:
-        name: findbugs-xml-report
-        path: target/findbugsXml.xml
+        name: pmd-report
+        path: target/site/pmd.xml
