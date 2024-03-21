@@ -23,11 +23,5 @@ jobs:
         run: |
           npm install -g snyk
 
-      - name: Run security scan
-        run: snyk test --all-projects --json > snyk_report.json
-
-      - name: Upload security scan report
-        uses: actions/upload-artifact@v2
-        with:
-          name: security-scan-report
-          path: snyk_report.json
+      - name: Run OWASP Dependency-Check
+        run: mvn org.owasp:dependency-check-maven:7.1.0:check
