@@ -1,0 +1,28 @@
+name: Code Analysis
+
+on: [push]
+
+jobs:
+  code-analysis:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up JDK
+      uses: actions/setup-java@v1
+      with:
+        java-version: 17
+
+    - name: Run Maven FindBugs
+      run: mvn findbugs:check
+
+    - name: Run FindBugs Maven Plugin
+      run: mvn findbugs:findbugs
+      
+    - name: Upload FindBugs report
+      uses: actions/upload-artifact@v2
+      with:
+        name: findbugs-report
+        path: target/site/findbugs.html
