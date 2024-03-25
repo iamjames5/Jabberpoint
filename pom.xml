@@ -22,9 +22,9 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.coveo</groupId>
-            <artifactId>fmt-maven-plugin</artifactId>
-            <version>2.13</version>
+            <groupId>net.revelc.code.formatter</groupId>
+            <artifactId>formatter-maven-plugin</artifactId>
+            <version>2.23.0</version>
         </dependency>
     </dependencies>
 
@@ -142,16 +142,24 @@
             </plugin>
 
             <plugin>
-                <groupId>com.coveo</groupId>
-                <artifactId>fmt-maven-plugin</artifactId>
-                <version>2.13</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>format</goal>
-                        </goals>
-                    </execution>
-                </executions>
+                <groupId>net.revelc.code.formatter</groupId>
+                <artifactId>formatter-maven-plugin</artifactId>
+                <version>2.22.0</version>
+                <configuration>
+                    <configFile>${project.basedir}/src/main/resources/formatter-maven-plugin/eclipse/java.xml</configFile>
+                    <configJsFile>${project.basedir}/src/main/resources/formatter-maven-plugin/eclipse/javascript.xml</configJsFile>
+                    <sourceDirectory>${project.basedir}</sourceDirectory>
+                    <excludes>
+                        <exclude>**/src/test/resources/**</exclude>
+                        <exclude>**/target/**</exclude>
+                    </excludes>
+                    <lineEnding>AUTO</lineEnding>
+                    <skipCssFormatting>true</skipCssFormatting>
+                    <skipHtmlFormatting>true</skipHtmlFormatting>
+                    <skipJsFormatting>true</skipJsFormatting>
+                    <skipJsonFormatting>true</skipJsonFormatting>
+                    <skipXmlFormatting>true</skipXmlFormatting>
+                </configuration>
             </plugin>
         </plugins>
     </build>
