@@ -1,8 +1,8 @@
 package com.nhlstenden.JabberPoint.StyleManagement;
 
 public enum Color {
-    BLACK,
-    RED,
-    BLUE,
-    WRITE
+  BLACK,
+  RED,
+  BLUE,
+  WRITE
 }
