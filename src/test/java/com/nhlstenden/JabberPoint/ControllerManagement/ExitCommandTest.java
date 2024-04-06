@@ -1,33 +1,33 @@
 package com.nhlstenden.JabberPoint.ControllerManagement;
-import com.nhlstenden.JabberPoint.PresentationManagement.Presentation;
-import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import com.nhlstenden.JabberPoint.PresentationManagement.Presentation;
+import org.junit.jupiter.api.Test;
+
 public class ExitCommandTest {
 
-   private static class MockPresentation extends Presentation
-   {
-      private int exitCode;
+  @Test
+  public void assertEqualsTrue() {
+    MockPresentation mockPresentation = new MockPresentation();
 
-      @Override
-      public void exit(int code) {
-         this.exitCode = code;
-      }
+    ExitCommand exitCommand = new ExitCommand(mockPresentation);
 
-      public int getExitCode() {
-         return exitCode;
-      }
-   }
+    exitCommand.execute();
 
-   @Test
-   public void assertEqualsTrue() {
-      MockPresentation mockPresentation = new MockPresentation();
+    assertEquals(0, mockPresentation.getExitCode());
+  }
 
-      ExitCommand exitCommand = new ExitCommand(mockPresentation);
+  private static class MockPresentation extends Presentation {
+    private int exitCode;
 
-      exitCommand.execute();
+    @Override
+    public void exit(int code) {
+      this.exitCode = code;
+    }
 
-      assertEquals(0, mockPresentation.getExitCode());
-   }
+    public int getExitCode() {
+      return exitCode;
+    }
+  }
 }

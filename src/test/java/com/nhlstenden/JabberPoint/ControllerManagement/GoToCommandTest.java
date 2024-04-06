@@ -9,38 +9,38 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class GoToCommandTest {
 
-   private static class MockPresentation extends Presentation {
-      private int slideNumber;
+  @Test
+  void testExecuteWithValidInput() {
+    MockPresentation mockPresentation = new MockPresentation();
+    GoToCommand goToCommand = new GoToCommand(mockPresentation);
 
-      @Override
-      public void setSlideNumber(int slideNumber) {
-         this.slideNumber = slideNumber;
-      }
+    goToCommand.execute();
 
-      public int getSlideNumber() {
-         return slideNumber;
-      }
-   }
+    assertEquals(4, mockPresentation.getSlideNumber()); // Since it's 0-based index
+  }
 
-   @Test
-   void testExecuteWithValidInput() {
-      MockPresentation mockPresentation = new MockPresentation();
-      GoToCommand goToCommand = new GoToCommand(mockPresentation);
+  @Test
+  void testExecuteWithInvalidInput() {
+    MockPresentation mockPresentation = new MockPresentation();
+    GoToCommand goToCommand = new GoToCommand(mockPresentation);
 
-      goToCommand.execute();
+    // Execute the command
+    goToCommand.execute();
 
-      assertEquals(4, mockPresentation.getSlideNumber()); // Since it's 0-based index
-   }
+    // Verify that the slide number was not set
+    assertNotEquals(0, mockPresentation.getSlideNumber()); // Slide number should remain unchanged
+  }
 
-   @Test
-   void testExecuteWithInvalidInput() {
-      MockPresentation mockPresentation = new MockPresentation();
-      GoToCommand goToCommand = new GoToCommand(mockPresentation);
+  private static class MockPresentation extends Presentation {
+    private int slideNumber;
 
-      // Execute the command
-      goToCommand.execute();
+    public int getSlideNumber() {
+      return slideNumber;
+    }
 
-      // Verify that the slide number was not set
-      assertNotEquals(0, mockPresentation.getSlideNumber()); // Slide number should remain unchanged
-   }
+    @Override
+    public void setSlideNumber(int slideNumber) {
+      this.slideNumber = slideNumber;
+    }
+  }
 }

@@ -6,28 +6,28 @@ import java.awt.Frame;
 
 public class AboutCommandTest {
 
-   private static class MockFrame extends Frame {
-      private boolean showCalled = false;
+  @Test
+  public void testExecute() {
+    MockFrame mockFrame = new MockFrame();
 
-      @Override
-      public void show() {
-         showCalled = true;
-      }
+    AboutCommand aboutCommand = new AboutCommand();
+    aboutCommand.setParent(mockFrame);
 
-      public boolean isShowCalled() {
-         return showCalled;
-      }
-   }
+    aboutCommand.execute();
 
-   @Test
-   public void testExecute() {
-      MockFrame mockFrame = new MockFrame();
+    assertTrue(mockFrame.isShowCalled());
+  }
 
-      AboutCommand aboutCommand = new AboutCommand();
-      aboutCommand.setParent(mockFrame);
+  private static class MockFrame extends Frame {
+    private boolean showCalled = false;
 
-      aboutCommand.execute();
+    @Override
+    public void show() {
+      showCalled = true;
+    }
 
-      assertTrue(mockFrame.isShowCalled());
-   }
+    public boolean isShowCalled() {
+      return showCalled;
+    }
+  }
 }

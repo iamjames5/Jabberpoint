@@ -5,13 +5,11 @@ import java.awt.*;
 public class AboutCommand implements Command {
   private Frame parent;
 
-  public Frame getParent()
-  {
+  public Frame getParent() {
     return parent;
   }
 
-  public void setParent(Frame parent)
-  {
+  public void setParent(Frame parent) {
     this.parent = parent;
   }
 

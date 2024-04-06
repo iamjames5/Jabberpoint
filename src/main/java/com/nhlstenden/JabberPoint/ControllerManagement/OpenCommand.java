@@ -3,12 +3,9 @@ package com.nhlstenden.JabberPoint.ControllerManagement;
 import com.nhlstenden.JabberPoint.LoaderManagement.Accessor;
 import com.nhlstenden.JabberPoint.LoaderManagement.XMLAccessor;
 import com.nhlstenden.JabberPoint.PresentationManagement.Presentation;
-
-import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
+import javax.swing.*;
 
 public class OpenCommand implements Command {
   private final Presentation presentation;

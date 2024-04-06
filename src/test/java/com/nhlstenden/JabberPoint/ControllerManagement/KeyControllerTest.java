@@ -10,40 +10,65 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class KeyControllerTest {
 
-   @Test
-   void testKeyPressedNextSlide() {
-      Presentation presentation = new Presentation();
-      KeyController keyController = new KeyController(presentation);
+  @Test
+  void testKeyPressedNextSlide() {
+    Presentation presentation = new Presentation();
+    KeyController keyController = new KeyController(presentation);
 
-      Component component = new Component() {};
+    Component component = new Component() {};
 
-      keyController.keyPressed(new KeyEvent(component, KeyEvent.KEY_PRESSED, System.currentTimeMillis(), 0, KeyEvent.VK_PAGE_DOWN, ' '));
+    keyController.keyPressed(
+        new KeyEvent(
+            component,
+            KeyEvent.KEY_PRESSED,
+            System.currentTimeMillis(),
+            0,
+            KeyEvent.VK_PAGE_DOWN,
+            ' '));
 
-      assertEquals(-1, presentation.getSlideNumber(), "Expected slide number should be 1 after pressing next slide key");
-   }
+    assertEquals(
+        -1,
+        presentation.getSlideNumber(),
+        "Expected slide number should be 1 after pressing next slide key");
+  }
 
-   @Test
-   void testKeyPressedPreviousSlide() {
-      Presentation presentation = new Presentation();
-      presentation.setSlideNumber(1); // Set the current slide to slide number 1
-      KeyController keyController = new KeyController(presentation);
+  @Test
+  void testKeyPressedPreviousSlide() {
+    Presentation presentation = new Presentation();
+    presentation.setSlideNumber(1); // Set the current slide to slide number 1
+    KeyController keyController = new KeyController(presentation);
 
-      Component component = new Component() {};
+    Component component = new Component() {};
 
-      keyController.keyPressed(new KeyEvent(component, KeyEvent.KEY_PRESSED, System.currentTimeMillis(), 0, KeyEvent.VK_PAGE_UP, ' '));
+    keyController.keyPressed(
+        new KeyEvent(
+            component,
+            KeyEvent.KEY_PRESSED,
+            System.currentTimeMillis(),
+            0,
+            KeyEvent.VK_PAGE_UP,
+            ' '));
 
-      assertEquals(0, presentation.getSlideNumber(), "Expected slide number should be 0 after pressing previous slide key");
-   }
+    assertEquals(
+        0,
+        presentation.getSlideNumber(),
+        "Expected slide number should be 0 after pressing previous slide key");
+  }
 
-   @Test
-   void testKeyPressedExit() {
-      Presentation presentation = new Presentation();
-      KeyController keyController = new KeyController(presentation);
+  @Test
+  void testKeyPressedExit() {
+    Presentation presentation = new Presentation();
+    KeyController keyController = new KeyController(presentation);
 
-      Component component = new Component() {};
+    Component component = new Component() {};
 
-      keyController.keyPressed(new KeyEvent(component, KeyEvent.KEY_PRESSED, System.currentTimeMillis(), 0, KeyEvent.VK_Q, ' '));
+    keyController.keyPressed(
+        new KeyEvent(
+            component, KeyEvent.KEY_PRESSED, System.currentTimeMillis(), 0, KeyEvent.VK_Q, ' '));
 
-      assertEquals(0, presentation.getSlideNumber(), "Expected slide number should be 0 after calling exit method");
-   }
+    assertEquals(
+        0,
+        presentation.getSlideNumber(),
+        "Expected slide number should be 0 after calling exit method");
+  }
 }

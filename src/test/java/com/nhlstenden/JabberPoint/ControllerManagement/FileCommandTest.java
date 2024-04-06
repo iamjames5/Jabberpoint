@@ -1,31 +1,14 @@
 package com.nhlstenden.JabberPoint.ControllerManagement;
 
-import com.nhlstenden.JabberPoint.LoaderManagement.Accessor;
-import com.nhlstenden.JabberPoint.LoaderManagement.XMLAccessor;
-import com.nhlstenden.JabberPoint.PresentationManagement.Presentation;
-import org.junit.jupiter.api.Test;
-
-import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.io.File;
-import java.io.IOException;
-
 import static org.junit.jupiter.api.Assertions.*;
 
+import com.nhlstenden.JabberPoint.PresentationManagement.Presentation;
+import java.io.File;
+import java.io.IOException;
+import javax.swing.*;
+import org.junit.jupiter.api.Test;
+
 class FileCommandTest {
-
-   private static class MockFrame extends JFrame {
-      private JMenuBar mockMenuBar;
-
-      @Override
-      public void setJMenuBar(JMenuBar menuBar) {
-         this.mockMenuBar = menuBar;
-      }
-
-      public JMenuBar getMockMenuBar() {
-         return mockMenuBar;
-      }
-   }
 
    @Test
    void testOpenFile() {
@@ -69,5 +52,18 @@ class FileCommandTest {
 
       // Cleanup temporary file
       tempFile.delete();
+   }
+
+   private static class MockFrame extends JFrame {
+      private JMenuBar mockMenuBar;
+
+      @Override
+      public void setJMenuBar(JMenuBar menuBar) {
+         this.mockMenuBar = menuBar;
+      }
+
+      public JMenuBar getMockMenuBar() {
+         return mockMenuBar;
+      }
    }
 }

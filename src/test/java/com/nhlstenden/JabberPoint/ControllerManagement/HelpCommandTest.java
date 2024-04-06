@@ -5,10 +5,10 @@ import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
 class HelpCommandTest {
 
-   @Test
-   void testExecute() {
-      HelpCommand helpCommand = new HelpCommand();
+  @Test
+  void testExecute() {
+    HelpCommand helpCommand = new HelpCommand();
 
-      assertDoesNotThrow(helpCommand::execute);
-   }
+    assertDoesNotThrow(helpCommand::execute);
+  }
 }
