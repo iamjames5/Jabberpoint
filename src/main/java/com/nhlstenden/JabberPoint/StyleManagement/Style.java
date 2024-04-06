@@ -1,5 +1,5 @@
 package com.nhlstenden.JabberPoint.StyleManagement;
 
 public interface Style {
-    void createStyle();
+  BasicStyle applyStyle(BasicStyle baseStyle);
 }

@@ -1,27 +1,32 @@
 package com.nhlstenden.JabberPoint.StyleManagement;
 
-public class FontDecorator extends StyleDecorator{
-    private String font;
-    public FontDecorator (Style wrapper, String font)
-    {
-        super(wrapper);
-        this.font = font;
-    }
+import java.awt.Font;
 
-    public String getFont ()
-    {
-        return font;
-    }
+public class FontDecorator implements Style {
 
-    public void setFont (String font)
-    {
-        this.font = font;
-    }
+  private static final String FONTNAME = "Helvetica";
 
-    @Override
-    public void createStyle ()
-    {
-        super.createStyle();
-        System.out.println("Applying Font: " + font);
-    }
+  Font font;
+  int fontSize;
+
+  public FontDecorator(Font font) {
+    this.font = font;
+  }
+
+  public FontDecorator(int points) {
+    this.font = new Font(FONTNAME, Font.BOLD, points);
+    this.fontSize = points;
+  }
+
+  public FontDecorator(String name, int points, int bold) {
+    this.font = new Font(name, bold, fontSize = points);
+  }
+
+  @Override
+  public BasicStyle applyStyle(BasicStyle baseStyle) {
+    baseStyle.setFont(font);
+    baseStyle.setFontSize(fontSize);
+
+    return baseStyle;
+  }
 }

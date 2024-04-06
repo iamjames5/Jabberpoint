@@ -1,27 +1,18 @@
 package com.nhlstenden.JabberPoint.StyleManagement;
 
-public class ColorDecorator extends StyleDecorator{
-    private Color color;
-    public ColorDecorator (Style wrapper, Color color)
-    {
-        super(wrapper);
-        this.color = color;
-    }
+import java.awt.Color;
 
-    public Color getColor ()
-    {
-        return color;
-    }
+public class ColorDecorator implements Style {
 
-    public void setColor (Color color)
-    {
-        this.color = color;
-    }
+  Color color;
 
-    @Override
-    public void createStyle ()
-    {
-        super.createStyle();
-        System.out.println("Applying Color: " + color);
-    }
+  public ColorDecorator(Color color) {
+    this.color = color;
+  }
+
+  @Override
+  public BasicStyle applyStyle(BasicStyle baseStyle) {
+    baseStyle.setColor(color);
+    return baseStyle;
+  }
 }

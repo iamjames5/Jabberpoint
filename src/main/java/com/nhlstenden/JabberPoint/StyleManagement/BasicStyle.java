@@ -1,78 +1,108 @@
 package com.nhlstenden.JabberPoint.StyleManagement;
 
-public class BasicStyle implements Style {
-    private static final int DEFAULT_INDENT = 0;
-    private static final String DEFAULT_FONT = "Helvetica";
-    private static final int DEFAULT_FONTSIZE = 30;
-    private static final int DEFAULT_LEADING = 20;
-    private int indent;
-    private Color color;
-    private String font;
-    private int fontSize;
-    private int leading;
+import java.awt.Color;
+import java.awt.Font;
 
-    public BasicStyle (int indent, Color color, String font, int fontSize, int leading)
-    {
-        this.indent = DEFAULT_INDENT;
-        this.color = color;
-        this.font = DEFAULT_FONT;
-        this.fontSize = DEFAULT_FONTSIZE;
-        this.leading = DEFAULT_LEADING;
+public class BasicStyle extends StyleDecorator {
+
+  public BasicStyle(Style... decorators) {
+    for (Style decorator : decorators) {
+      decorator.applyStyle(this);
+    }
+  }
+
+  public BasicStyle(BasicStyle baseStyle, Style... decorators) {
+    // copy the base style
+    indent = baseStyle.indent;
+    color = baseStyle.color;
+    font = baseStyle.font;
+    fontSize = baseStyle.fontSize;
+    leading = baseStyle.leading;
+
+    // apply base style to this style
+    for (Style decorator : decorators) {
+      decorator.applyStyle(this);
+    }
+  }
+
+  public static void createStyles() {
+    styles = new BasicStyle[5];
+    styles[0] =
+        new BasicStyle(
+            new IndentDecorator(0),
+            new ColorDecorator(Color.RED),
+            new FontDecorator(48),
+            new LeadingDecorator(20));
+
+    styles[1] =
+        new BasicStyle(
+            new IndentDecorator(20),
+            new ColorDecorator(Color.blue),
+            new FontDecorator(40),
+            new LeadingDecorator(10));
+
+    styles[2] =
+        new BasicStyle(
+            new IndentDecorator(50),
+            new ColorDecorator(Color.black),
+            new FontDecorator(36),
+            new LeadingDecorator(10));
+
+    styles[3] =
+        new BasicStyle(
+            new IndentDecorator(70),
+            new ColorDecorator(Color.black),
+            new FontDecorator(30),
+            new LeadingDecorator(10));
+
+    styles[4] =
+        new BasicStyle(
+            new IndentDecorator(90),
+            new ColorDecorator(Color.orange),
+            new FontDecorator(24),
+            new LeadingDecorator(10));
+  }
+
+  // public Style(int indent, Color color, int points, int leading) {
+  // this.indent = indent;
+  // this.color = color;
+  // font = new Font(FONTNAME, Font.BOLD, fontSize=points);
+  // this.leading = leading;
+  // }
+
+  public static BasicStyle getStyle(int level) {
+    if (level >= styles.length) {
+      level = styles.length - 1;
+    }
+    return styles[level];
+  }
+
+  @Override
+  public BasicStyle applyStyle(BasicStyle baseStyle) {
+    return baseStyle;
+  }
+
+  public String toString() {
+    // print the style as format: "Indent: 0, Color: BLACK, Leading: 0, Font: Helvetica, FontSize:
+    // 30, FontStyle: "
+    String str =
+        "Indent: "
+            + indent
+            + ", Color: "
+            + color
+            + ", Leading: "
+            + leading
+            + ", FontSize: "
+            + fontSize;
+
+    if (font != null) {
+      str += ", Font: " + font.getFontName() + ", FontStyle: " + font.getStyle();
     }
 
-    public int getIndent ()
-    {
-        return indent;
-    }
+    return str;
+  }
 
-    public void setIndent (int indent)
-    {
-        this.indent = indent;
-    }
-
-    public Color getColor ()
-    {
-        return color;
-    }
-
-    public void setColor (Color color)
-    {
-        this.color = color;
-    }
-
-    public String getFont ()
-    {
-        return font;
-    }
-
-    public void setFont (String font)
-    {
-        this.font = font;
-    }
-
-    public int getFontSize ()
-    {
-        return fontSize;
-    }
-
-    public void setFontSize (int fontSize)
-    {
-        this.fontSize = fontSize;
-    }
-
-    public int getLeading ()
-    {
-        return leading;
-    }
-
-    public void setLeading (int leading)
-    {
-        this.leading = leading;
-    }
-
-    @Override
-    public void createStyle ()
-    {
-        System.out.println("Creating style -- Indent: " + indent + ", Font: " + font + ", Color: " + color + ", FontSize: " + fontSize + ", Leading: " + leading);
-    }
+  public Font getFont(float scale) {
+    return font.deriveFont(fontSize * scale);
+  }
 }

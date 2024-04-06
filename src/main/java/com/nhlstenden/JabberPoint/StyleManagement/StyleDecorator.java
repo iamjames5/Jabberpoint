@@ -1,26 +1,55 @@
 package com.nhlstenden.JabberPoint.StyleManagement;
 
-abstract class StyleDecorator implements Style {
-    protected Style wrapper;
+import java.awt.Color;
+import java.awt.Font;
 
-    public StyleDecorator (Style wrapper)
-    {
-        this.wrapper = wrapper;
-    }
+public abstract class StyleDecorator implements Style {
+  static BasicStyle[] styles; // de styles
 
-    public Style getWrapper ()
-    {
-        return wrapper;
-    }
+  int indent;
+  Color color;
+  Font font;
+  int fontSize;
+  int leading;
 
-    public void setWrapper (Style wrapper)
-    {
-        this.wrapper = wrapper;
-    }
+  // default getter and setter
+  public int getIndent() {
+    return indent;
+  }
 
-    @Override
-    public void createStyle ()
-    {
-        wrapper.createStyle();
-    }
+  public void setIndent(int indent) {
+    this.indent = indent;
+  }
+
+  public Color getColor() {
+    return color;
+  }
+
+  public void setColor(Color color) {
+    this.color = color;
+  }
+
+  public Font getFont() {
+    return font;
+  }
+
+  public void setFont(Font font) {
+    this.font = font;
+  }
+
+  public int getFontSize() {
+    return fontSize;
+  }
+
+  public void setFontSize(int fontSize) {
+    this.fontSize = fontSize;
+  }
+
+  public int getLeading() {
+    return leading;
+  }
+
+  public void setLeading(int leading) {
+    this.leading = leading;
+  }
 }
