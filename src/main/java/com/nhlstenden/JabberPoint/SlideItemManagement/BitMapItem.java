@@ -44,6 +44,10 @@ public class BitMapItem extends SlideItem {
     this(0, null);
   }
 
+  public BufferedImage getBufferedImage() {
+    return bufferedImage;
+  }
+
   // give the filename of the image
   public String getName() {
     return imageName;
