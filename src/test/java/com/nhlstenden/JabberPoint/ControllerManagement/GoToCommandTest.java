@@ -3,28 +3,26 @@ package com.nhlstenden.JabberPoint.ControllerManagement;
 import com.nhlstenden.JabberPoint.PresentationManagement.Presentation;
 import org.junit.jupiter.api.Test;
 
-import javax.swing.*;
-
 import static org.junit.jupiter.api.Assertions.*;
 
-class GoToCommandTest {
+public class GoToCommandTest {
 
   @Test
-  void testExecuteWithValidInput() {
+  public void testExecuteWithValidInput_assertEquals_4() {
     MockPresentation mockPresentation = new MockPresentation();
     GoToCommand goToCommand = new GoToCommand(mockPresentation);
 
     goToCommand.execute();
 
-    assertEquals(4, mockPresentation.getSlideNumber()); // Since it's 0-based index
+    // Since it's 0-based index enter 5
+    assertEquals(4, mockPresentation.getSlideNumber());
   }
 
   @Test
-  void testExecuteWithInvalidInput() {
+  public void testExecuteWithInvalidInput_assertDoesNotEqual_0() {
     MockPresentation mockPresentation = new MockPresentation();
     GoToCommand goToCommand = new GoToCommand(mockPresentation);
 
-    // Execute the command
     goToCommand.execute();
 
     // Verify that the slide number was not set

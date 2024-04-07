@@ -8,10 +8,10 @@ import java.awt.event.KeyEvent;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class KeyControllerTest {
+public class KeyControllerTest {
 
   @Test
-  void testKeyPressedNextSlide() {
+  public void testKeyPressedNextSlide_assertEquals_negative1() {
     Presentation presentation = new Presentation();
     KeyController keyController = new KeyController(presentation);
 
@@ -33,7 +33,7 @@ class KeyControllerTest {
   }
 
   @Test
-  void testKeyPressedPreviousSlide() {
+  public void testKeyPressedPreviousSlide_assertEquals_0() {
     Presentation presentation = new Presentation();
     presentation.setSlideNumber(1); // Set the current slide to slide number 1
     KeyController keyController = new KeyController(presentation);
@@ -56,7 +56,7 @@ class KeyControllerTest {
   }
 
   @Test
-  void testKeyPressedExit() {
+  public void testKeyPressedExit_assertEquals_0() {
     Presentation presentation = new Presentation();
     KeyController keyController = new KeyController(presentation);
 

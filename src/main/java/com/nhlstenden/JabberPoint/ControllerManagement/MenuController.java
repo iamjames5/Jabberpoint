@@ -23,7 +23,7 @@ public class MenuController extends MenuBar {
     setupMenu();
   }
 
-  private void setupMenu() {
+  void setupMenu() {
     // Create the File menu
     Menu fileMenu = new Menu("File");
     addMenuItem(fileMenu, "Open", new FileCommand(presentation, (JFrame) parent));
@@ -50,7 +50,7 @@ public class MenuController extends MenuBar {
     setHelpMenu(helpMenu);
   }
 
-  private void addMenuItem(Menu menu, String label, Command command) {
+  void addMenuItem(Menu menu, String label, Command command) {
     MenuItem menuItem = new MenuItem(label, new MenuShortcut(label.charAt(0)));
     menuItem.addActionListener(e -> command.execute());
     menu.add(menuItem);

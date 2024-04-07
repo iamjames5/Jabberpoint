@@ -3,10 +3,10 @@ package com.nhlstenden.JabberPoint.ControllerManagement;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
-class HelpCommandTest {
+public class HelpCommandTest {
 
   @Test
-  void testExecute() {
+  public void testExecute_assertDoesNotThrow_noExceptionThrown() {
     HelpCommand helpCommand = new HelpCommand();
 
     assertDoesNotThrow(helpCommand::execute);

@@ -8,32 +8,29 @@ import java.io.IOException;
 import javax.swing.*;
 import org.junit.jupiter.api.Test;
 
-class FileCommandTest {
+public class FileCommandTest {
 
    @Test
-   void testOpenFile() {
+   public void testOpenFile_assertEquals_0() {
       Presentation mockPresentation = new Presentation();
       MockFrame mockFrame = new MockFrame();
 
       FileCommand fileCommand = new FileCommand(mockPresentation, mockFrame);
       fileCommand.execute();
 
-      // Simulate selecting a file
       fileCommand.openFile();
 
-      // Verify that presentation was loaded and slide number was set to 0
       assertEquals(0, mockPresentation.getSlideNumber());
    }
 
    @Test
-   void testSaveFile() {
+   public void testSaveFile_assertTrue_returnsTrue() {
       Presentation mockPresentation = new Presentation();
       MockFrame mockFrame = new MockFrame();
 
       FileCommand fileCommand = new FileCommand(mockPresentation, mockFrame);
       fileCommand.execute();
 
-      // Create a temporary file
       File tempFile;
       try {
          tempFile = File.createTempFile("test", ".xml");
@@ -42,15 +39,11 @@ class FileCommandTest {
          return;
       }
 
-      // Simulate selecting the temporary file for saving
       JFileChooser fileChooser = new JFileChooser();
       fileChooser.setSelectedFile(tempFile);
       fileCommand.saveFile();
 
-      // Verify that presentation was saved successfully
       assertTrue(tempFile.exists());
-
-      // Cleanup temporary file
       tempFile.delete();
    }
 

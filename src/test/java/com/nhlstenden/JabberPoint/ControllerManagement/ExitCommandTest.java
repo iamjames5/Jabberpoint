@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 public class ExitCommandTest {
 
   @Test
-  public void assertEqualsTrue() {
+  public void testExecute_assertEquals_0() {
     MockPresentation mockPresentation = new MockPresentation();
 
     ExitCommand exitCommand = new ExitCommand(mockPresentation);
