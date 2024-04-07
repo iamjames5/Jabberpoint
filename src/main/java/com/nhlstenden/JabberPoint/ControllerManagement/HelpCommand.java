@@ -1,10 +1,12 @@
 package com.nhlstenden.JabberPoint.ControllerManagement;
 
-public class HelpCommand implements Command {
+public class HelpCommand implements Command
+{
 
-  @Override
-  public void execute() {
-    Command aboutCommand = new AboutCommand();
-    aboutCommand.execute();
-  }
+    @Override
+    public void execute ()
+    {
+        Command aboutCommand = new AboutCommand();
+        aboutCommand.execute();
+    }
 }

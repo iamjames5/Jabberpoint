@@ -1,5 +1,6 @@
 package com.nhlstenden.JabberPoint.ControllerManagement;
 
-public interface Command {
-  void execute();
+public interface Command
+{
+    void execute ();
 }
