@@ -2,7 +2,6 @@ package com.nhlstenden.JabberPoint.PresentationManagement;
 
 import com.nhlstenden.JabberPoint.SlideItemManagement.Slide;
 import com.nhlstenden.JabberPoint.SlideViewerManagement.SlideViewerComponent;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Vector;

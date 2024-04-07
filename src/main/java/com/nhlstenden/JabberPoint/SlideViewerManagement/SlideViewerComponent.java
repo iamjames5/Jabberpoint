@@ -2,9 +2,8 @@ package com.nhlstenden.JabberPoint.SlideViewerManagement;
 
 import com.nhlstenden.JabberPoint.PresentationManagement.Presentation;
 import com.nhlstenden.JabberPoint.SlideItemManagement.Slide;
-
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
 /**
  * SlideViewerComponent is a graphical component that can show slides.
