@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8ad5cae-88c8-4a56-b925-4d70954ed4c4" name="Changes" comment="" />
+    <list default="true" id="e8ad5cae-88c8-4a56-b925-4d70954ed4c4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/AboutCommandTest$TestFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/AboutCommandTest$TestFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/MenuControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/MenuControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/NewCommandTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/NewCommandTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/OpenCommandTest$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/OpenCommandTest$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/OpenCommandTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/OpenCommandTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/SaveCommandTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/SaveCommandTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/ViewCommandTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/ViewCommandTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/SlideViewerManagement/SlideViewerComponentTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/SlideViewerManagement/SlideViewerComponentTest$TestGraphics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/SlideViewerManagement/SlideViewerComponentTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/SlideViewerManagement/SlideViewerFrameTest.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +118,7 @@
       <workItem from="1711355976410" duration="693000" />
       <workItem from="1711357185729" duration="3286000" />
       <workItem from="1712222469793" duration="779000" />
-      <workItem from="1712440301721" duration="19327000" />
+      <workItem from="1712440301721" duration="20520000" />
     </task>
     <servers />
   </component>
