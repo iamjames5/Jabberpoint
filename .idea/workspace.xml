@@ -4,7 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8ad5cae-88c8-4a56-b925-4d70954ed4c4" name="Changes" comment="" />
+    <list default="true" id="ce1780a1-a038-45ec-97df-48ed232986c3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/PresentationManagement/Presentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/PresentationManagement/Presentation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/SlideViewerManagement/SlideViewerComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/SlideViewerManagement/SlideViewerComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/SlideViewerManagement/SlideViewerFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/SlideViewerManagement/SlideViewerFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/SlideItemManagement/BitMapItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/SlideItemManagement/BitMapItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/SlideViewerManagement/SlideViewerComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/SlideViewerManagement/SlideViewerComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/SlideViewerManagement/SlideViewerFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/SlideViewerManagement/SlideViewerFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/AboutCommandTest$TestFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/AboutCommandTest$TestFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/AboutCommandTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/AboutCommandTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/HelpCommandTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/HelpCommandTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/KeyControllerTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/KeyControllerTest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/KeyControllerTest$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/KeyControllerTest$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/KeyControllerTest$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/KeyControllerTest$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/KeyControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/KeyControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/MenuControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/MenuControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/NewCommandTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/NewCommandTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/OpenCommandTest$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/OpenCommandTest$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/OpenCommandTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/OpenCommandTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/SaveCommandTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/SaveCommandTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/ViewCommandTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/ViewCommandTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/SlideItemManagement/CreateSlideItemFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/SlideItemManagement/CreateSlideItemFactoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/StyleManagement/StyleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/StyleManagement/StyleTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +45,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -42,6 +74,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_directory_selection": "C:/Users/james/Jabberpoint/src/test/java/com/nhlstenden/JabberPoint/LoaderManagement",
     "last_opened_file_path": "/Users/dtg/Desktop/SQ_Git/Jabberpoint",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -58,41 +93,107 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.nhlstenden.JabberPoint.LoaderManagement" />
+      <recent name="com.nhlstenden.JabberPoint.SlideViewerManagement" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.JabberPoint">
-    <configuration name="JabberPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nhlstenden.JabberPoint.JabberPoint" />
+  <component name="RunManager" selected="JUnit.AboutCommandTest">
+    <configuration name="AboutCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Jabberpoint" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nhlstenden.JabberPoint.*" />
+          <option name="PATTERN" value="com.nhlstenden.JabberPoint.ControllerManagement.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.nhlstenden.JabberPoint.ControllerManagement" />
+      <option name="MAIN_CLASS_NAME" value="com.nhlstenden.JabberPoint.ControllerManagement.AboutCommandTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JPTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DemoAccessorTest.testLoadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Jabberpoint" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JPTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nhlstenden.JabberPoint.LoaderManagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nhlstenden.JabberPoint.LoaderManagement" />
+      <option name="MAIN_CLASS_NAME" value="com.nhlstenden.JabberPoint.LoaderManagement.DemoAccessorTest" />
+      <option name="METHOD_NAME" value="testLoadFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoAccessorTest.testSaveFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Jabberpoint" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nhlstenden.JabberPoint.LoaderManagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nhlstenden.JabberPoint.LoaderManagement" />
+      <option name="MAIN_CLASS_NAME" value="com.nhlstenden.JabberPoint.LoaderManagement.DemoAccessorTest" />
+      <option name="METHOD_NAME" value="testSaveFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PresentationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Jabberpoint" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nhlstenden.JabberPoint.PresentationManagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nhlstenden.JabberPoint.PresentationManagement" />
+      <option name="MAIN_CLASS_NAME" value="com.nhlstenden.JabberPoint.PresentationManagement.PresentationTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PresentationTest.testGetTitleOfFirstSlide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Jabberpoint" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nhlstenden.JabberPoint.PresentationManagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nhlstenden.JabberPoint.PresentationManagement" />
+      <option name="MAIN_CLASS_NAME" value="com.nhlstenden.JabberPoint.PresentationManagement.PresentationTest" />
+      <option name="METHOD_NAME" value="testGetTitleOfFirstSlide" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JabberPoint" />
-        <item itemvalue="JUnit.JPTest" />
+        <item itemvalue="JUnit.AboutCommandTest" />
+        <item itemvalue="JUnit.DemoAccessorTest.testLoadFile" />
+        <item itemvalue="JUnit.DemoAccessorTest.testSaveFile" />
+        <item itemvalue="JUnit.PresentationTest.testGetTitleOfFirstSlide" />
+        <item itemvalue="JUnit.PresentationTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e8ad5cae-88c8-4a56-b925-4d70954ed4c4" name="Changes" comment="" />
+      <changelist id="ce1780a1-a038-45ec-97df-48ed232986c3" name="Changes" comment="" />
       <created>1710971762117</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -107,6 +208,7 @@
       <workItem from="1711357185729" duration="3286000" />
       <workItem from="1712222469793" duration="779000" />
       <workItem from="1712440301721" duration="19327000" />
+      <workItem from="1712514988258" duration="3226000" />
     </task>
     <servers />
   </component>
