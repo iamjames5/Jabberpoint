@@ -21,7 +21,7 @@ import javax.swing.JFrame;
  */
 public class SlideViewerFrame extends JFrame {
   public static final int WIDTH = 1200;
-  public static final int HEIGHT = 800;
+  public static final int HEIGHT = 737;
   private static final long serialVersionUID = 3227L;
   private static final String JABTITLE = "Jabberpoint 1.6 - OU";
 

@@ -119,6 +119,11 @@ public class Presentation implements Observable {
     file = newFile;
   }
 
+  public ArrayList<Slide> getShowList()
+  {
+    return showList;
+  }
+
   @Override
   public void addObserver(Observer observer) {
     observers.add(observer);
