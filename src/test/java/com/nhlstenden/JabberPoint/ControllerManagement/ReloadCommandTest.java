@@ -1,9 +1,9 @@
 package com.nhlstenden.JabberPoint.ControllerManagement;
 
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+
 import com.nhlstenden.JabberPoint.PresentationManagement.Presentation;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
 public class ReloadCommandTest {
   @Test

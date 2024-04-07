@@ -1,17 +1,16 @@
 package com.nhlstenden.JabberPoint.ControllerManagement;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import com.nhlstenden.JabberPoint.LoaderManagement.Accessor;
 import com.nhlstenden.JabberPoint.LoaderManagement.XMLAccessor;
 import com.nhlstenden.JabberPoint.PresentationManagement.Presentation;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
-import javax.swing.*;
 import java.io.File;
 import java.io.IOException;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import javax.swing.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class OpenCommandTest {
 

@@ -1,9 +1,10 @@
 package com.nhlstenden.JabberPoint.ControllerManagement;
 
-import com.nhlstenden.JabberPoint.PresentationManagement.Presentation;
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+
+import com.nhlstenden.JabberPoint.PresentationManagement.Presentation;
+import org.junit.jupiter.api.Test;
 
 public class NewCommandTest {
 

@@ -1,12 +1,11 @@
 package com.nhlstenden.JabberPoint.ControllerManagement;
 
-import com.nhlstenden.JabberPoint.PresentationManagement.Presentation;
-import org.junit.jupiter.api.Test;
-
-import javax.swing.*;
-import java.awt.*;
-
 import static org.junit.jupiter.api.Assertions.*;
+
+import com.nhlstenden.JabberPoint.PresentationManagement.Presentation;
+import java.awt.*;
+import javax.swing.*;
+import org.junit.jupiter.api.Test;
 
 public class MenuControllerTest {
 

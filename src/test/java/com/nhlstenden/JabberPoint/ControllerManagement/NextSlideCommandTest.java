@@ -1,10 +1,10 @@
 package com.nhlstenden.JabberPoint.ControllerManagement;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.nhlstenden.JabberPoint.PresentationManagement.Presentation;
 import com.nhlstenden.JabberPoint.SlideItemManagement.Slide;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class NextSlideCommandTest {
 
