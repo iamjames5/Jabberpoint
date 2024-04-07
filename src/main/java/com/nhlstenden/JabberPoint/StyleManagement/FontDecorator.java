@@ -6,8 +6,8 @@ public class FontDecorator implements Style {
 
   private static final String FONTNAME = "Helvetica";
 
-  Font font;
-  int fontSize;
+  private Font font;
+  private int fontSize;
 
   public FontDecorator(Font font) {
     this.font = font;

@@ -63,13 +63,6 @@ public class BasicStyle extends StyleDecorator {
             new LeadingDecorator(10));
   }
 
-  // public Style(int indent, Color color, int points, int leading) {
-  // this.indent = indent;
-  // this.color = color;
-  // font = new Font(FONTNAME, Font.BOLD, fontSize=points);
-  // this.leading = leading;
-  // }
-
   public static BasicStyle getStyle(int level) {
     if (level >= styles.length) {
       level = styles.length - 1;
@@ -83,8 +76,6 @@ public class BasicStyle extends StyleDecorator {
   }
 
   public String toString() {
-    // print the style as format: "Indent: 0, Color: BLACK, Leading: 0, Font: Helvetica, FontSize:
-    // 30, FontStyle: "
     String str =
         "Indent: "
             + indent

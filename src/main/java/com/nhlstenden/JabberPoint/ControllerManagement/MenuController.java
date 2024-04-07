@@ -18,8 +18,8 @@ public class MenuController extends MenuBar {
   private final Presentation presentation;
 
   public MenuController(Frame frame, Presentation pres) {
-    parent = frame;
-    presentation = pres;
+    this.parent = frame;
+    this.presentation = pres;
     setupMenu();
   }
 

@@ -53,7 +53,7 @@ public class XMLAccessor extends Accessor {
   protected static final String UNKNOWNTYPE = "Unknown Element type";
   protected static final String NFE = "Number Format Exception";
 
-  private String getTitle(Element element, String tagName) {
+  public String getTitle(Element element, String tagName) {
     NodeList titles = element.getElementsByTagName(tagName);
     return titles.item(0).getTextContent();
   }
@@ -138,7 +138,7 @@ public class XMLAccessor extends Accessor {
     return slide;
   }
 
-  protected void loadSlideItem(Slide slide, Element item) {
+  public void loadSlideItem(Slide slide, Element item) {
     int level = 1; // default
     NamedNodeMap attributes = item.getAttributes();
     String leveltext = attributes.getNamedItem(LEVEL).getTextContent();
@@ -157,16 +157,6 @@ public class XMLAccessor extends Accessor {
     } else {
       slide.append(slideitem);
     }
-    // if (TEXT.equals(type)) {
-    // 	slide.append(new TextItem(level, item.getTextContent()));
-    // } else {
-    // 	if (IMAGE.equals(type)) {
-    // 		slide.append(new BitMapItem(level, item.getTextContent()));
-    // 	}
-    // 	else {
-    // 		System.err.println(UNKNOWNTYPE);
-    // 	}
-    // }
   }
 
   public void saveFile(Presentation presentation, File filename) throws IOException {
