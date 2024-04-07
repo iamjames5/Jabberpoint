@@ -6,12 +6,12 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
 public class ReloadCommandTest {
-   @Test
-   public void testExecute_assertDoesNotThrow_noThrownException() {
-      Presentation presentation = new Presentation();
+  @Test
+  public void testExecute_assertDoesNotThrow_noThrownException() {
+    Presentation presentation = new Presentation();
 
-      ReloadCommand reloadCommand = new ReloadCommand(presentation);
+    ReloadCommand reloadCommand = new ReloadCommand(presentation);
 
-      assertDoesNotThrow(reloadCommand::execute);
-   }
+    assertDoesNotThrow(reloadCommand::execute);
+  }
 }

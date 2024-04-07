@@ -6,12 +6,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class ViewCommandTest {
 
-   @Test
-   public void testExecute_assertDoesNotThrow_noExceptionThrown() {
-      Presentation presentation = new Presentation();
+  @Test
+  public void testExecute_assertDoesNotThrow_noExceptionThrown() {
+    Presentation presentation = new Presentation();
 
-      ViewCommand viewCommand = new ViewCommand(presentation);
+    ViewCommand viewCommand = new ViewCommand(presentation);
 
-      assertDoesNotThrow(viewCommand::execute);
-   }
+    assertDoesNotThrow(viewCommand::execute);
+  }
 }

@@ -52,13 +52,6 @@ public class StyleTest {
     assertEquals(Color.RED, newStyle.getColor());
   }
 
-//  @Test
-//  public void testCreatStyle_setFontSize_shouldBeExpect() {
-//    BasicStyle newStyle = new BasicStyle(baseStyle, new FontSizeDecorator(40));
-//
-//    assertEquals(40, newStyle.getFontSize());
-//  }
-
   @Test
   public void testCreatStyle_setMultipleStyle_shouldBeExpect() {
     BasicStyle newStyle =

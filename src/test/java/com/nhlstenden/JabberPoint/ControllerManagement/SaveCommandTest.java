@@ -9,12 +9,12 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class SaveCommandTest {
 
-   @Test
-   public void testExecuteSuccessfulSave_assertTrue_returnsNewFile() {
-      Presentation presentation = new Presentation();
-      SaveCommand saveCommand = new SaveCommand(presentation, new Frame());
+  @Test
+  public void testExecuteSuccessfulSave_assertTrue_returnsNewFile() {
+    Presentation presentation = new Presentation();
+    SaveCommand saveCommand = new SaveCommand(presentation, new Frame());
 
-      assertDoesNotThrow(saveCommand::execute);
-      assertTrue(new File("dump.xml").exists());
-   }
+    assertDoesNotThrow(saveCommand::execute);
+    assertTrue(new File("dump.xml").exists());
+  }
 }

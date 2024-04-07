@@ -26,6 +26,7 @@ public abstract class SlideItem {
   public SlideItem(int lev) {
     this.level = lev;
   }
+
   // an empty slideitem
   public SlideItem() {
     this(0);
