@@ -1,6 +1,7 @@
 package com.nhlstenden.JabberPoint.StyleManagement;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -14,13 +15,21 @@ public class StyleTest {
   public void setup() {
     baseStyle = new BasicStyle();
     baseStyle.setColor(Color.BLACK);
+    baseStyle.setFontSize(30);
     baseStyle.setFont(new Font("Helvetica", Font.PLAIN, 30));
   }
 
   @Test
-  public void testCreatStyle_BasicStyle_shouldBeExpect() {
+  public void testBasicStyle_BasicStyle_shouldBeEqual() {
     assertEquals(Color.BLACK, baseStyle.getColor());
     assertEquals(new Font("Helvetica", Font.PLAIN, 30), baseStyle.getFont());
+  }
+
+  @Test
+  public void testBasicStyle_getFontWithScale_shouldBeEqual() {
+    float scale = 10f;
+    Font scaledFont = baseStyle.getFont(scale);
+    assertEquals(baseStyle.getFont().getSize() * scale, scaledFont.getSize(), 0.001);
   }
 
   @Test
