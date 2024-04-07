@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="ce1780a1-a038-45ec-97df-48ed232986c3" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
@@ -35,6 +36,14 @@
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/ViewCommandTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/ControllerManagement/ViewCommandTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/SlideItemManagement/CreateSlideItemFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/SlideItemManagement/CreateSlideItemFactoryTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/StyleManagement/StyleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/StyleManagement/StyleTest.class" afterDir="false" />
+=======
+    <list default="true" id="e8ad5cae-88c8-4a56-b925-4d70954ed4c4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jabberpoint.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Jabberpoint.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+>>>>>>> f90f5bf65466ead3aa7120a871db4baa8bd81c62
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +68,6 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="useMavenConfig" value="true" />
-        <option name="usePluginRegistry" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -70,6 +78,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -85,7 +97,7 @@
     "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "google-java-format.settings",
+    "settings.editor.selected.configurable": "build.tools",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -207,8 +219,13 @@
       <workItem from="1711355976410" duration="693000" />
       <workItem from="1711357185729" duration="3286000" />
       <workItem from="1712222469793" duration="779000" />
+<<<<<<< HEAD
       <workItem from="1712440301721" duration="19327000" />
       <workItem from="1712514988258" duration="3226000" />
+=======
+      <workItem from="1712440301721" duration="23098000" />
+      <workItem from="1712516749680" duration="483000" />
+>>>>>>> f90f5bf65466ead3aa7120a871db4baa8bd81c62
     </task>
     <servers />
   </component>
