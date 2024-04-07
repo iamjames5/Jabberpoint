@@ -2,7 +2,7 @@ package com.nhlstenden.JabberPoint.StyleManagement;
 
 public class LeadingDecorator implements Style {
 
-  int leading;
+  private int leading;
 
   public LeadingDecorator(int leading) {
     this.leading = leading;

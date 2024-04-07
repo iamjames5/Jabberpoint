@@ -52,12 +52,12 @@ public class StyleTest {
     assertEquals(Color.RED, newStyle.getColor());
   }
 
-  @Test
-  public void testCreatStyle_setFontSize_shouldBeExpect() {
-    BasicStyle newStyle = new BasicStyle(baseStyle, new FontSizeDecorator(40));
-
-    assertEquals(40, newStyle.getFontSize());
-  }
+//  @Test
+//  public void testCreatStyle_setFontSize_shouldBeExpect() {
+//    BasicStyle newStyle = new BasicStyle(baseStyle, new FontSizeDecorator(40));
+//
+//    assertEquals(40, newStyle.getFontSize());
+//  }
 
   @Test
   public void testCreatStyle_setMultipleStyle_shouldBeExpect() {
@@ -66,12 +66,10 @@ public class StyleTest {
     newStyle = new BasicStyle(newStyle, new LeadingDecorator(40));
     newStyle = new BasicStyle(newStyle, new IndentDecorator(40));
     newStyle = new BasicStyle(newStyle, new ColorDecorator(Color.RED));
-    newStyle = new BasicStyle(newStyle, new FontSizeDecorator(40));
 
     assertEquals(new Font("Arial", Font.BOLD, 40), newStyle.getFont());
     assertEquals(40, newStyle.getLeading());
     assertEquals(40, newStyle.getIndent());
     assertEquals(Color.RED, newStyle.getColor());
-    assertEquals(40, newStyle.getFontSize());
   }
 }

@@ -4,13 +4,12 @@ import java.awt.Color;
 import java.awt.Font;
 
 public abstract class StyleDecorator implements Style {
-  static BasicStyle[] styles; // de styles
-
-  int indent;
-  Color color;
-  Font font;
-  int fontSize;
-  int leading;
+  protected static BasicStyle[] styles; // de styles
+  protected int indent;
+  protected Color color;
+  protected Font font;
+  protected int fontSize;
+  protected int leading;
 
   // default getter and setter
   public int getIndent() {

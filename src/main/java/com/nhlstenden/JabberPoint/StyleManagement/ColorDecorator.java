@@ -4,7 +4,7 @@ import java.awt.Color;
 
 public class ColorDecorator implements Style {
 
-  Color color;
+  private Color color;
 
   public ColorDecorator(Color color) {
     this.color = color;

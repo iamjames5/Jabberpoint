@@ -24,9 +24,9 @@ public abstract class SlideItem {
   private int level = 0; // level of the slideitem
 
   public SlideItem(int lev) {
-    level = lev;
+    this.level = lev;
   }
-
+  // an empty slideitem
   public SlideItem() {
     this(0);
   }
