@@ -1,16 +1,15 @@
 package com.nhlstenden.JabberPoint.SlideViewerManagement;
 
-import com.nhlstenden.JabberPoint.PresentationManagement.Presentation;
-import com.nhlstenden.JabberPoint.SlideItemManagement.Slide;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
-import javax.swing.*;
-import java.awt.*;
-import java.awt.image.BufferedImage;
-
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import com.nhlstenden.JabberPoint.PresentationManagement.Presentation;
+import com.nhlstenden.JabberPoint.SlideItemManagement.Slide;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import javax.swing.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class SlideViewerComponentTest {
 

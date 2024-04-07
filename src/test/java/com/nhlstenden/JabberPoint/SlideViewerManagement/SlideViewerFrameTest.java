@@ -1,14 +1,12 @@
 package com.nhlstenden.JabberPoint.SlideViewerManagement;
 
-import com.nhlstenden.JabberPoint.PresentationManagement.Presentation;
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
+import com.nhlstenden.JabberPoint.PresentationManagement.Presentation;
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowListener;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
 
 public class SlideViewerFrameTest {
 

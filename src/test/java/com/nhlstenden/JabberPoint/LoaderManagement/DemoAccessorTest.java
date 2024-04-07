@@ -1,18 +1,16 @@
 package com.nhlstenden.JabberPoint.LoaderManagement;
 
-import com.nhlstenden.JabberPoint.PresentationManagement.Presentation;
-import com.nhlstenden.JabberPoint.SlideItemManagement.Slide;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
-import java.io.File;
-import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-class DemoAccessorTest {
+import com.nhlstenden.JabberPoint.PresentationManagement.Presentation;
+import com.nhlstenden.JabberPoint.SlideItemManagement.Slide;
+import java.io.File;
+import java.util.List;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
+class DemoAccessorTest {
   private DemoAccessor demoAccessor;
   private Presentation presentation;
 
