@@ -70,26 +70,34 @@
                <configuration>
                    <testFailureIgnore>true</testFailureIgnore>
                    <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
+                   <argLine>-javaagent:/path/to/jacocoagent.jar=destfile=target/jacoco.exec</argLine>
                </configuration>
             </plugin>
 
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.10</version>
+                <version>0.8.7</version>
                 <executions>
                     <execution>
-                        <id>jacoco-initialize</id>
+                        <id>pre-unit-test</id>
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
+                        <configuration>
+                            <destFile>target/jacoco.exec</destFile>
+                            <propertyName>surefireArgLine</propertyName>
+                        </configuration>
                     </execution>
                     <execution>
-                        <id>jacoco-report</id>
-                        <phase>prepare-package</phase>
+                        <id>post-unit-test</id>
+                        <phase>test</phase>
                         <goals>
                             <goal>report</goal>
                         </goals>
+                        <configuration>
+                            <dataFile>target/jacoco.exec</dataFile>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
