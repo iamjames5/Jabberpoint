@@ -31,4 +31,20 @@ public class TextItemTest {
     assertEquals(1, textItem.getLevel());
     assertEquals("", textItem.getText());
   }
+
+  @Test
+  public void testToString_WithText_shouldReturnCorrectStringRepresentation() {
+    TextItem textItem = new TextItem(1, "Test text");
+    String result = textItem.toString();
+
+    assertEquals("TextItem[1,Test text]", result);
+  }
+
+  @Test
+  public void testToString_WithoutText_shouldReturnCorrectStringRepresentation() {
+    TextItem textItem = new TextItem(1, null);
+    String result = textItem.toString();
+
+    assertEquals("TextItem[1,]", result);
+  }
 }
