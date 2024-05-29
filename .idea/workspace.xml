@@ -25,16 +25,16 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.tabs"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.FileCommandTest.testOpenFile_assertEquals_0">
+}</component>
+  <component name="RunManager" selected="Application.JabberPoint">
     <configuration name="JabberPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nhlstenden.JabberPoint.JabberPoint" />
       <module name="Jabberpoint" />
@@ -48,42 +48,73 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExitCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Jabberpoint" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nhlstenden.JabberPoint.ControllerManagement.*" />
+          <option name="PATTERN" value="com.nhlstenden.JabberPoint.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.nhlstenden.JabberPoint.ControllerManagement" />
-      <option name="MAIN_CLASS_NAME" value="com.nhlstenden.JabberPoint.ControllerManagement.FileCommandTest" />
+      <option name="PACKAGE_NAME" value="com.nhlstenden.JabberPoint.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.nhlstenden.JabberPoint.controller.ExitCommandTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileCommandTest.testOpenFile_assertEquals_0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GoToCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Jabberpoint" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nhlstenden.JabberPoint.ControllerManagement.*" />
+          <option name="PATTERN" value="com.nhlstenden.JabberPoint.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.nhlstenden.JabberPoint.ControllerManagement" />
-      <option name="MAIN_CLASS_NAME" value="com.nhlstenden.JabberPoint.ControllerManagement.FileCommandTest" />
-      <option name="METHOD_NAME" value="testOpenFile_assertEquals_0" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.nhlstenden.JabberPoint.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.nhlstenden.JabberPoint.controller.GoToCommandTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KeyControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Jabberpoint" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nhlstenden.JabberPoint.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nhlstenden.JabberPoint.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.nhlstenden.JabberPoint.controller.KeyControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MenuControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Jabberpoint" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nhlstenden.JabberPoint.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nhlstenden.JabberPoint.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.nhlstenden.JabberPoint.controller.MenuControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FileCommandTest.testOpenFile_assertEquals_0" />
-        <item itemvalue="JUnit.FileCommandTest" />
         <item itemvalue="Application.JabberPoint" />
+        <item itemvalue="JUnit.MenuControllerTest" />
+        <item itemvalue="JUnit.KeyControllerTest" />
+        <item itemvalue="JUnit.GoToCommandTest" />
+        <item itemvalue="JUnit.ExitCommandTest" />
       </list>
     </recent_temporary>
   </component>

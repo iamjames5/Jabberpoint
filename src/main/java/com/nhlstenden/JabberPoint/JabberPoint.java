@@ -1,9 +1,9 @@
 package com.nhlstenden.JabberPoint;
 
-import com.nhlstenden.JabberPoint.LoaderManagement.XMLAccessor;
-import com.nhlstenden.JabberPoint.PresentationManagement.Presentation;
-import com.nhlstenden.JabberPoint.SlideViewerManagement.SlideViewerFrame;
-import com.nhlstenden.JabberPoint.StyleManagement.BasicStyle;
+import com.nhlstenden.JabberPoint.loader.XMLAccessor;
+import com.nhlstenden.JabberPoint.presentation.Presentation;
+import com.nhlstenden.JabberPoint.slideViewer.SlideViewerFrame;
+import com.nhlstenden.JabberPoint.style.BasicStyle;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Paths;
