@@ -1,5 +1,6 @@
 package com.nhlstenden.JabberPoint.controller;
 
+import com.nhlstenden.JabberPoint.command.*;
 import com.nhlstenden.JabberPoint.presentation.Presentation;
 import java.awt.*;
 import javax.swing.*;
@@ -15,14 +16,14 @@ public class MenuController extends MenuBar {
     setupMenu();
   }
 
-  void setupMenu() {
+  public void setupMenu() {
     // Add menus to the MenuBar
     add(setupFileMenu());
     add(setupViewMenu());
     setHelpMenu(setupHelpMenu());
   }
 
-  Menu setupFileMenu() {
+  public Menu setupFileMenu() {
     // Create the File menu
     Menu fileMenu = new Menu("File");
     addMenuItem(fileMenu, "Open", new OpenCommand(presentation, (JFrame) parent));
@@ -34,7 +35,7 @@ public class MenuController extends MenuBar {
     return fileMenu;
   }
 
-  Menu setupViewMenu() {
+  public Menu setupViewMenu() {
     // Create the View menu
     Menu viewMenu = new Menu("View");
     addMenuItem(viewMenu, "Next", new NextSlideCommand(presentation));
@@ -45,7 +46,7 @@ public class MenuController extends MenuBar {
     return viewMenu;
   }
 
-  Menu setupHelpMenu() {
+  public Menu setupHelpMenu() {
     // Create the Help menu
     Menu helpMenu = new Menu("Help");
     addMenuItem(helpMenu, "About", new AboutCommand(presentation));
@@ -53,7 +54,7 @@ public class MenuController extends MenuBar {
     return helpMenu;
   }
 
-  void addMenuItem(Menu menu, String label, Command command) {
+  public void addMenuItem(Menu menu, String label, Command command) {
     MenuItem menuItem = new MenuItem(label, new MenuShortcut(label.charAt(0)));
     menuItem.addActionListener(e -> command.execute());
     menu.add(menuItem);

@@ -1,5 +1,8 @@
 package com.nhlstenden.JabberPoint.controller;
 
+import com.nhlstenden.JabberPoint.command.ExitCommand;
+import com.nhlstenden.JabberPoint.command.NextSlideCommand;
+import com.nhlstenden.JabberPoint.command.PrevSlideCommand;
 import com.nhlstenden.JabberPoint.presentation.Presentation;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -34,9 +37,9 @@ public class KeyController extends KeyAdapter {
         PrevSlideCommand prevSlideCommand = new PrevSlideCommand(presentation);
         prevSlideCommand.execute();
         break;
-      case 'q':
-      case 'Q':
-        System.exit(0);
+      case KeyEvent.VK_Q:
+        ExitCommand exitCommand = new ExitCommand(presentation);
+        exitCommand.execute();
         break; // Probably never reached!!
       default:
         break;

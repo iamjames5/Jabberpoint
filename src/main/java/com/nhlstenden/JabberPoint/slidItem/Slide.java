@@ -95,7 +95,7 @@ public class Slide implements Observer {
   }
 
   // Give the scale for drawing
-  private float getScale(Rectangle area) {
+  public float getScale(Rectangle area) {
     return Math.min(
         ((float) area.width) / ((float) WIDTH), ((float) area.height) / ((float) HEIGHT));
   }

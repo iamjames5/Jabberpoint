@@ -70,4 +70,5 @@ public class KeyControllerTest {
         presentation.getSlideNumber(),
         "Expected slide number should be 0 after calling exit method");
   }
+
 }

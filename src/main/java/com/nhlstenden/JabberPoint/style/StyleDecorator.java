@@ -10,6 +10,11 @@ public abstract class StyleDecorator implements Style {
   protected Font font;
   protected int fontSize;
   protected int leading;
+  protected Style decoratedStyle;
+
+  public StyleDecorator(Style decoratedStyle) {
+    this.decoratedStyle = decoratedStyle;
+  }
 
   // default getter and setter
   public int getIndent() {
@@ -50,12 +55,6 @@ public abstract class StyleDecorator implements Style {
 
   public void setLeading(int leading) {
     this.leading = leading;
-  }
-
-  protected Style decoratedStyle;
-
-  public StyleDecorator(Style decoratedStyle) {
-    this.decoratedStyle = decoratedStyle;
   }
 
   @Override

@@ -2,6 +2,7 @@ package com.nhlstenden.JabberPoint.controller;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import com.nhlstenden.JabberPoint.command.Command;
 import com.nhlstenden.JabberPoint.presentation.Presentation;
 
 import javax.swing.*;
@@ -31,12 +32,13 @@ public class MenuControllerTest {
     MenuController menuController = new MenuController(frame, presentation);
 
     Menu menu = new Menu("File");
-    Command testCommand = new Command(presentation) {
-      @Override
-      public void execute() {
-        // Do nothing
-      }
-    };
+    Command testCommand =
+        new Command(presentation) {
+          @Override
+          public void execute() {
+            // Do nothing
+          }
+        };
 
     menuController.addMenuItem(menu, "Test Item", testCommand);
 

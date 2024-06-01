@@ -4,7 +4,7 @@ public abstract class SlideItemCreator {
   public static SlideItem createSlideItem(String type, int level, String content) {
     SlideItemType itemType;
 
-    // 尝试将字符串转换为 SlideItemType 枚举
+    // Try to convert the string to a SlideItemType enum
     try {
       itemType = SlideItemType.fromString(type);
     } catch (IllegalArgumentException e) {
@@ -15,7 +15,7 @@ public abstract class SlideItemCreator {
       return null;
     }
 
-    // 根据转换后的 SlideItemType 枚举创建 SlideItem
+    // Create a SlideItem based on the converted SlideItemType enum
     switch (itemType) {
       case TEXTITEM:
         return TextItemCreator.createSlideItem(level, content);
