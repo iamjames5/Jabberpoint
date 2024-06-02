@@ -44,6 +44,19 @@ public class Presentation implements Observable {
     showTitle = nt;
   }
 
+  // filename setter and getter
+  public File getFilename() {
+    return file;
+  }
+
+  public void setFilename(File newFile) {
+    file = newFile;
+  }
+
+  public ArrayList<Slide> getShowList() {
+    return showList;
+  }
+
   public void setShowView(SlideViewerComponent slideViewerComponent) {
     this.slideViewComponent = slideViewerComponent;
   }
@@ -103,19 +116,6 @@ public class Presentation implements Observable {
   public int exit(int n) {
     System.exit(n);
     return n;
-  }
-
-  public File getFilename() {
-    return file;
-  }
-
-  // filename setter and getter
-  public void setFilename(File newFile) {
-    file = newFile;
-  }
-
-  public ArrayList<Slide> getShowList() {
-    return showList;
   }
 
   // Observer code
