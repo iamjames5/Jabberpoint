@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="GoogleJavaFormatSettings">
-<<<<<<< HEAD
-    <option name="enabled" value="true" />
-=======
     <option name="enabled" value="false" />
->>>>>>> f90f5bf65466ead3aa7120a871db4baa8bd81c62
   </component>
 </project>
