@@ -6,8 +6,8 @@ public class FontDecorator extends StyleDecorator {
 
   private static final String DEFAULT_FONT = "Helvetica";
 
-  public FontDecorator(int point, Style baseStyle) {
-    super(baseStyle);
+  public FontDecorator(int point, Style decoratedStyle) {
+    super(decoratedStyle);
     Font font = new Font(DEFAULT_FONT, Font.BOLD, point);
     this.setFontSize(point);
     this.setFont(font);

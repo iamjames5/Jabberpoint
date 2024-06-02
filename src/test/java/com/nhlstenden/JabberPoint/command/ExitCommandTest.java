@@ -2,7 +2,6 @@ package com.nhlstenden.JabberPoint.command;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import com.nhlstenden.JabberPoint.command.ExitCommand;
 import com.nhlstenden.JabberPoint.presentation.Presentation;
 import org.junit.jupiter.api.Test;
 

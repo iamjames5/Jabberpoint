@@ -7,8 +7,7 @@ import java.io.File;
 import java.io.IOException;
 import javax.swing.*;
 
-public class OpenCommand extends Command
-{
+public class OpenCommand extends Command {
   private final JFrame parentFrame;
 
   public OpenCommand(Presentation presentation, JFrame parentFrame) {
@@ -17,17 +16,21 @@ public class OpenCommand extends Command
   }
 
   // Method to open a file
-  private void openFile() {
+  public void openFile() {
     Accessor xmlAccessor = createXMLAccessor();
     try {
       // check if the file is a valid XML file
       File file = createFileChooser();
-      if(file == null) {
+      if (file == null) {
         return;
       }
 
       if (!file.getName().endsWith(".xml")) {
-        showMessageDialog(parentFrame, "Error opening file: " + "Invalid file type", "Open Error", JOptionPane.ERROR_MESSAGE);
+        showMessageDialog(
+            parentFrame,
+            "Error opening file: " + "Invalid file type",
+            "Open Error",
+            JOptionPane.ERROR_MESSAGE);
         return;
       }
 
@@ -36,7 +39,11 @@ public class OpenCommand extends Command
       presentation.setSlideNumber(0);
 
     } catch (IOException exc) {
-      showMessageDialog(parentFrame, "Error opening file: " + exc.getMessage(), "Open Error", JOptionPane.ERROR_MESSAGE);
+      showMessageDialog(
+          parentFrame,
+          "Error opening file: " + exc.getMessage(),
+          "Open Error",
+          JOptionPane.ERROR_MESSAGE);
     }
   }
 
@@ -47,7 +54,8 @@ public class OpenCommand extends Command
   protected File createFileChooser() {
     JFileChooser fileChooser = new JFileChooser();
     // set only show .xml file
-    fileChooser.setFileFilter(new javax.swing.filechooser.FileNameExtensionFilter("XML files", "xml"));
+    fileChooser.setFileFilter(
+        new javax.swing.filechooser.FileNameExtensionFilter("XML files", "xml"));
 
     int returnValue = fileChooser.showOpenDialog(parentFrame);
     if (returnValue == JFileChooser.APPROVE_OPTION) {

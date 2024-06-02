@@ -13,51 +13,33 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 public class AboutCommandTest {
-  
-  @Mock
-  private Presentation presentation;
-  @Mock
-  private Frame parent;
-  @InjectMocks
-  private AboutCommandTest.MockAboutCommand mockAboutCommand;
-  private AboutCommand aboutCommand;
+
+  @Mock private Presentation presentation;
+  @Mock private Frame parent;
+//  @InjectMocks private AboutCommandTest.MockAboutCommand mockAboutCommand;
+  @InjectMocks private AboutCommand aboutCommand;
 
   @BeforeEach
   void setUp() {
     MockitoAnnotations.openMocks(this);
-    mockAboutCommand = spy(new AboutCommandTest.MockAboutCommand(presentation));
-    doNothing().when(mockAboutCommand).showMessageDialog(any(Frame.class), anyString(), anyString(), anyInt());
-
-    aboutCommand = new AboutCommand(presentation);
+    aboutCommand = spy(new AboutCommand(presentation, parent));
   }
 
   @Test
   public void testExecute_assertDoesNotThrow_noExceptionThrown() {
+    aboutCommand.setParent(parent);
+    doNothing().when(aboutCommand).showMessageDialog(any(Frame.class), anyString(), anyString(), anyInt());
 
-    mockAboutCommand.setParent(parent);
+    assertDoesNotThrow(aboutCommand::execute);
 
-    assertDoesNotThrow(mockAboutCommand::execute);
-
-    verify(mockAboutCommand, times(1)).showMessageDialog(any(Frame.class), anyString(), anyString(), anyInt());
+    verify(aboutCommand, times(1)).showMessageDialog(any(Frame.class), anyString(), anyString(), anyInt());
   }
+
 
   @Test
   public void testGetParent_assertEquals_parent() {
-      Frame parent = new Frame();
-      aboutCommand.setParent(parent);
-      assertEquals(parent, aboutCommand.getParent());
-  }
-
-  private static class MockAboutCommand extends AboutCommand
-  {
-
-    public MockAboutCommand(Presentation presentation) {
-      super(presentation);
-    }
-
-    @Override
-    protected void showMessageDialog(Frame frame, String message, String title, int messageType) {
-      // Do nothing
-    }
+    Frame parent = new Frame();
+    aboutCommand.setParent(parent);
+    assertEquals(parent, aboutCommand.getParent());
   }
 }

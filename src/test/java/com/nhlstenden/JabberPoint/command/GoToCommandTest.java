@@ -10,20 +10,21 @@ import org.junit.jupiter.api.Test;
 import org.mockito.*;
 
 class GoToCommandTest {
-  @Mock
-  private Presentation presentation;
-  @InjectMocks
-  private MockGoToCommand goToCommand;
+  @Mock private Presentation presentation;
+  @InjectMocks private MockGoToCommand goToCommand;
 
   @BeforeEach
   void setUp() {
     MockitoAnnotations.openMocks(this);
     goToCommand = spy(new MockGoToCommand(presentation));
-    doNothing().when(goToCommand).showMessageDialog(any(JFrame.class), anyString(), anyString(), anyInt());
+    doNothing()
+        .when(goToCommand)
+        .showMessageDialog(any(JFrame.class), anyString(), anyString(), anyInt());
   }
 
   @Test
-  void testExecuteWithValidInput_assertEquals_2() throws InterruptedException, InvocationTargetException {
+  void testExecuteWithValidInput_assertEquals_2()
+      throws InterruptedException, InvocationTargetException {
     doReturn(5).when(presentation).getSize();
     doReturn("2").when(goToCommand).getUserInputDialog();
 
@@ -34,32 +35,29 @@ class GoToCommandTest {
   }
 
   @Test
-  void testExecuteWithInvalidInput_assertDoesNotEqual_0() throws InterruptedException, InvocationTargetException {
+  void testExecuteWithInvalidInput_assertDoesNotEqual_0()
+      throws InterruptedException, InvocationTargetException {
     doReturn("").when(goToCommand).getUserInputDialog();
     doReturn(10).when(presentation).getSize();
     goToCommand.execute();
-    verify(goToCommand).showMessageDialog(
-            eq(null),
-            eq("Invalid page number"),
-            eq("Error"),
-            eq(JOptionPane.ERROR_MESSAGE)
-    );
+    verify(goToCommand)
+        .showMessageDialog(
+            eq(null), eq("Invalid page number"), eq("Error"), eq(JOptionPane.ERROR_MESSAGE));
 
     doReturn("11").when(goToCommand).getUserInputDialog();
     doReturn(10).when(presentation).getSize();
 
     // Execute the method under test
     goToCommand.execute();
-    verify(goToCommand).showMessageDialog(
+    verify(goToCommand)
+        .showMessageDialog(
             eq(null),
             eq("Invalid page number, Out of range"),
             eq("Error"),
-            eq(JOptionPane.ERROR_MESSAGE)
-    );
+            eq(JOptionPane.ERROR_MESSAGE));
   }
 
-  private static class MockGoToCommand extends GoToCommand
-  {
+  private static class MockGoToCommand extends GoToCommand {
 
     public MockGoToCommand(Presentation presentation) {
       super(presentation);

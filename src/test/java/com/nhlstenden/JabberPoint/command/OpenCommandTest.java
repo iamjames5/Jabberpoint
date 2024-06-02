@@ -16,21 +16,19 @@ import org.mockito.MockitoAnnotations;
 
 public class OpenCommandTest {
 
-  @Mock
-  private Presentation presentation;
-  @Mock
-  private JFrame parentFrame;
-  @Mock
-  private XMLAccessor xmlAccessor;
-  @InjectMocks
-  private OpenCommand openCommand;
+  @Mock private Presentation presentation;
+  @Mock private JFrame parentFrame;
+  @Mock private XMLAccessor xmlAccessor;
+  @InjectMocks private OpenCommand openCommand;
 
   @BeforeEach
   public void setUp() {
 
     MockitoAnnotations.openMocks(this);
     openCommand = spy(new OpenCommand(presentation, parentFrame));
-    doNothing().when(openCommand).showMessageDialog(any(JFrame.class), anyString(), anyString(), anyInt());
+    doNothing()
+        .when(openCommand)
+        .showMessageDialog(any(JFrame.class), anyString(), anyString(), anyInt());
   }
 
   @Test
@@ -56,14 +54,13 @@ public class OpenCommandTest {
 
     verify(presentation, never()).clear();
     verify(presentation, never()).setSlideNumber(0);
-    verify(openCommand).showMessageDialog(
+    verify(openCommand)
+        .showMessageDialog(
             eq(parentFrame),
             eq("Error opening file: Invalid file type"),
             eq("Open Error"),
-            eq(JOptionPane.ERROR_MESSAGE)
-    );
+            eq(JOptionPane.ERROR_MESSAGE));
   }
-
 
   @Test
   public void testOpenFileIOException_assertEquals_1() throws IOException {
@@ -73,15 +70,17 @@ public class OpenCommandTest {
     File mockFile = mock(File.class);
     doReturn("null.xml").when(mockFile).getName();
     doReturn(mockFile).when(openCommand).createFileChooser();
-    doThrow(new FileNotFoundException("File not found")).when(xmlAccessor).loadFile(presentation, mockFile);
+    doThrow(new FileNotFoundException("File not found"))
+        .when(xmlAccessor)
+        .loadFile(presentation, mockFile);
 
     openCommand.execute();
 
-    verify(openCommand).showMessageDialog(
+    verify(openCommand)
+        .showMessageDialog(
             eq(parentFrame),
             eq("Error opening file: File not found"),
             eq("Open Error"),
-            eq(JOptionPane.ERROR_MESSAGE)
-    );
+            eq(JOptionPane.ERROR_MESSAGE));
   }
 }

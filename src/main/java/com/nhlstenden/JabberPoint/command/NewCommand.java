@@ -3,8 +3,7 @@ package com.nhlstenden.JabberPoint.command;
 import com.nhlstenden.JabberPoint.presentation.Presentation;
 import com.nhlstenden.JabberPoint.slidItem.Slide;
 
-public class NewCommand extends Command
-{
+public class NewCommand extends Command {
 
   public NewCommand(Presentation presentation) {
     super(presentation);

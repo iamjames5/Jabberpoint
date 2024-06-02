@@ -49,7 +49,7 @@ public class MenuController extends MenuBar {
   public Menu setupHelpMenu() {
     // Create the Help menu
     Menu helpMenu = new Menu("Help");
-    addMenuItem(helpMenu, "About", new AboutCommand(presentation));
+    addMenuItem(helpMenu, "About", new AboutCommand(presentation, parent));
 
     return helpMenu;
   }

@@ -2,8 +2,8 @@ package com.nhlstenden.JabberPoint.style;
 
 public class IndentDecorator extends StyleDecorator {
 
-  public IndentDecorator(int indent, Style baseStyle) {
-    super(baseStyle);
+  public IndentDecorator(int indent, Style decoratedStyle) {
+    super(decoratedStyle);
     this.setIndent(indent);
   }
 
