@@ -1,32 +1,28 @@
-name: Upload Jar to GCS
-
+name: Publish to Google Cloud
 on:
   push:
     branches: [ "acceptance" ]
+  pull_request:
+    branches: [ "acceptance" ]
 
 jobs:
-  upload:
-    name: Upload Jar to GCS
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      - name: Set up Google Cloud SDK
-        uses: google-github-actions/setup-gcloud@v0.4.0
+      - name: Log recent commit
+        run: git log -1
+
+      - id: 'auth'
+        uses: 'google-github-actions/auth@v2'
         with:
-          project_id: ${{ secrets.GCP_PROJECT_ID }}
-          service_account_key: ${{ secrets.GCP_SA_KEY }}
-          export_default_credentials: true
+          credentials_json: '${{ secrets.GOOGLE_CLOUD_CREDENTIALS }}'
 
-      - name: Build with Maven
-        run: mvn clean verify
+      - name: 'Set up Cloud SDK'
+        uses: 'google-github-actions/setup-gcloud@v2'
 
-      - name: Zip report directory
-        run: zip -r jabberpoint.zip target/*.jar
-
-      - name: Upload to G-Drive
-        uses: adityak74/google-drive-upload-git-action@main
-        with:
-          filename: "jabberpoint.zip"
-          overwrite: "true" 
+      - name: 'Use gcloud CLI'
+        run: 'gcloud storage cp target/*.jar gs://japperpoint_accepentance/testFolder'
