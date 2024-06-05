@@ -1,8 +1,8 @@
 package com.nhlstenden.JabberPoint.loader;
 
 import com.nhlstenden.JabberPoint.presentation.Presentation;
-import com.nhlstenden.JabberPoint.slidItem.BitMapItem;
-import com.nhlstenden.JabberPoint.slidItem.Slide;
+import com.nhlstenden.JabberPoint.slideItem.BitMapItem;
+import com.nhlstenden.JabberPoint.slideItem.Slide;
 import java.io.File;
 
 /**

@@ -1,11 +1,13 @@
 package com.nhlstenden.JabberPoint.controller;
 
+import com.nhlstenden.JabberPoint.command.Command;
 import com.nhlstenden.JabberPoint.command.ExitCommand;
 import com.nhlstenden.JabberPoint.command.NextSlideCommand;
 import com.nhlstenden.JabberPoint.command.PrevSlideCommand;
 import com.nhlstenden.JabberPoint.presentation.Presentation;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.util.HashMap;
 
 /**
  * This is the KeyController (KeyListener)
@@ -16,33 +18,34 @@ import java.awt.event.KeyEvent;
 public class KeyController extends KeyAdapter {
   private final Presentation presentation; // Commands are given to the presentation
 
-  public KeyController(Presentation p) {
-    this.presentation = p;
+  private final HashMap<Integer, Command> commandMap;
+
+  public KeyController(Presentation presentation) {
+    this.presentation = presentation;
+    this.commandMap = new HashMap<>();
+    initializeCommands();
+  }
+
+  private void initializeCommands() {
+    // Initialize the command map
+    commandMap.put(KeyEvent.VK_PAGE_DOWN, new NextSlideCommand(presentation));
+    commandMap.put(KeyEvent.VK_DOWN, new NextSlideCommand(presentation));
+    commandMap.put(KeyEvent.VK_ENTER, new NextSlideCommand(presentation));
+    commandMap.put(KeyEvent.VK_RIGHT, new NextSlideCommand(presentation));
+    commandMap.put((int) '+', new NextSlideCommand(presentation));
+
+    commandMap.put(KeyEvent.VK_PAGE_UP, new PrevSlideCommand(presentation));
+    commandMap.put(KeyEvent.VK_UP, new PrevSlideCommand(presentation));
+    commandMap.put(KeyEvent.VK_LEFT, new PrevSlideCommand(presentation));
+    commandMap.put((int) '-', new PrevSlideCommand(presentation));
+
+    commandMap.put(KeyEvent.VK_Q, new ExitCommand(presentation));
   }
 
   public void keyPressed(KeyEvent keyEvent) {
-    switch (keyEvent.getKeyCode()) {
-      case KeyEvent.VK_PAGE_DOWN:
-      case KeyEvent.VK_DOWN:
-      case KeyEvent.VK_ENTER:
-      case KeyEvent.VK_RIGHT:
-      case '+':
-        NextSlideCommand nextSlideCommand = new NextSlideCommand(presentation);
-        nextSlideCommand.execute();
-        break;
-      case KeyEvent.VK_PAGE_UP:
-      case KeyEvent.VK_UP:
-      case KeyEvent.VK_LEFT:
-      case '-':
-        PrevSlideCommand prevSlideCommand = new PrevSlideCommand(presentation);
-        prevSlideCommand.execute();
-        break;
-      case KeyEvent.VK_Q:
-        ExitCommand exitCommand = new ExitCommand(presentation);
-        exitCommand.execute();
-        break; // Probably never reached!!
-      default:
-        break;
+    Command command = commandMap.get(keyEvent.getKeyCode());
+    if (command != null) {
+      command.execute();
     }
 
     presentation.notifyObservers();

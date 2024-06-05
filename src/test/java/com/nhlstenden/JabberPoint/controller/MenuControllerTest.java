@@ -38,7 +38,7 @@ public class MenuControllerTest {
           }
         };
 
-    menuController.addMenuItem(menu, "Test Item", testCommand);
+    menuController.addMenuItem(menu, "Test Item");
 
     assertEquals(1, menu.getItemCount());
   }

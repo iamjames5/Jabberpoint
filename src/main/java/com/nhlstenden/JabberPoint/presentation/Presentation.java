@@ -1,6 +1,6 @@
 package com.nhlstenden.JabberPoint.presentation;
 
-import com.nhlstenden.JabberPoint.slidItem.Slide;
+import com.nhlstenden.JabberPoint.slideItem.Slide;
 import com.nhlstenden.JabberPoint.slideViewer.SlideViewerComponent;
 import java.io.File;
 import java.util.ArrayList;

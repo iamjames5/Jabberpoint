@@ -3,7 +3,7 @@ package com.nhlstenden.JabberPoint.loader;
 import static org.junit.jupiter.api.Assertions.*;
 
 import com.nhlstenden.JabberPoint.presentation.Presentation;
-import com.nhlstenden.JabberPoint.slidItem.Slide;
+import com.nhlstenden.JabberPoint.slideItem.Slide;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;

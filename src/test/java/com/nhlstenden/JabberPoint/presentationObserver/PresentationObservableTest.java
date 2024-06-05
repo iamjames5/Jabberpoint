@@ -4,8 +4,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import com.nhlstenden.JabberPoint.loader.XMLAccessor;
 import com.nhlstenden.JabberPoint.presentation.Presentation;
-import com.nhlstenden.JabberPoint.slidItem.Slide;
-import com.nhlstenden.JabberPoint.slidItem.TextItem;
+import com.nhlstenden.JabberPoint.slideItem.Slide;
+import com.nhlstenden.JabberPoint.slideItem.TextItem;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
