@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.nhlstenden.JabberPoint.style.StyleTest
--------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in com.nhlstenden.JabberPoint.style.StyleTest
