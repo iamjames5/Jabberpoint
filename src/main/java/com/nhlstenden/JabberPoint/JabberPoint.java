@@ -10,11 +10,12 @@ import java.nio.file.Paths;
 import javax.swing.JOptionPane;
 
 public class JabberPoint {
-  public static void main(String[] argv) {
 
-    final String IOERR = "IO Error: ";
-    final String JABERR = "Jabberpoint Error ";
-    final String JABVERSION = "Jabberpoint 1.6 - OU version";
+  protected static final String IOERR = "IO Error: ";
+  protected static final String JABERR = "Jabberpoint Error ";
+  protected static final String JABVERSION = "Jabberpoint 1.6 - OU version";
+
+  public static void main(String[] argv) {
 
     StyleFactory.createStyles();
     Presentation presentation = new Presentation();
