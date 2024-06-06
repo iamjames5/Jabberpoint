@@ -5,115 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2feac86-4200-4400-8433-0ca81593ab06" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/reload.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/JabberPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/JabberPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/command/NewCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/command/NewCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/controller/KeyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/controller/KeyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/controller/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/loader/DemoAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/loader/DemoAccessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/loader/XMLAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/loader/XMLAccessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/presentation/Presentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/presentation/Presentation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/slidItem/BitMapItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/slidItem/BitMapItemCreator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/slidItem/Slide.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/slidItem/SlideItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/slidItem/SlideItemCreator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/slidItem/SlideItemType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/slidItem/TextItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/slidItem/TextItemCreator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/slideViewer/SlideViewerComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/slideViewer/SlideViewerComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/style/BasicStyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/style/BasicStyle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/style/BasicStyleImplement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/style/ColorDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/style/ColorDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/style/FontDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/style/FontDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/style/IndentDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/style/IndentDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/style/LeadingDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/style/LeadingDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/style/Style.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/style/Style.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/style/StyleDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/style/StyleDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/command/NextSlideCommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/command/NextSlideCommandTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/command/PrevSlideCommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/command/PrevSlideCommandTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/controller/MenuControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/controller/MenuControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/loader/DemoAccessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/loader/DemoAccessorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/loader/XmlParseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/loader/XmlParseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/presentationObserver/PresentationObservableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/presentationObserver/PresentationObservableTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/slidItem/BitMapItemCreatorTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/slidItem/BitMapItemTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/slidItem/CreateSlideItemFactoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/slidItem/TextItemCreatorTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/slidItem/TextItemTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/slideViewer/SlideViewerComponentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/slideViewer/SlideViewerComponentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/style/StyleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/style/StyleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JabberPoint-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/JabberPoint-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classpath.index" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/classpath.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/JabberPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/JabberPoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/command/AboutCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/command/AboutCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/command/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/command/Command.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/command/ExitCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/command/ExitCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/command/GoToCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/command/GoToCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/command/NewCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/command/NewCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/command/NextSlideCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/command/NextSlideCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/command/OpenCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/command/OpenCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/command/PrevSlideCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/command/PrevSlideCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/command/ReloadCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/command/ReloadCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/command/SaveCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/command/SaveCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/controller/KeyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/controller/KeyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/controller/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/controller/MenuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/loader/DemoAccessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/loader/DemoAccessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/loader/XMLAccessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/loader/XMLAccessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/presentation/Presentation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/presentation/Presentation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/slidItem/BitMapItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/slidItem/BitMapItemCreator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/slidItem/Slide.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/slidItem/SlideItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/slidItem/SlideItemCreator$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/slidItem/SlideItemCreator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/slidItem/SlideItemType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/slidItem/TextItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/slidItem/TextItemCreator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/slideViewer/SlideViewerComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/slideViewer/SlideViewerComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/style/BasicStyle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/style/BasicStyle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/style/BasicStyleImplement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/style/ColorDecorator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/style/ColorDecorator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/style/FontDecorator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/style/FontDecorator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/style/IndentDecorator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/style/IndentDecorator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/style/LeadingDecorator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/style/LeadingDecorator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/style/StyleDecorator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/style/StyleDecorator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/classpath.index" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/classpath.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/command/AboutCommandTest$MockAboutCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/command/AboutCommandTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/command/AboutCommandTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/command/ExitCommandTest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/command/ExitCommandTest$MockPresentation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/command/ExitCommandTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/command/ExitCommandTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/command/GoToCommandTest$MockGoToCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/command/GoToCommandTest$MockGoToCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/command/GoToCommandTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/command/GoToCommandTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/command/NewCommandTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/command/NewCommandTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/command/NextSlideCommandTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/command/NextSlideCommandTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/command/OpenCommandTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/command/OpenCommandTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/command/PrevSlideCommandTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/command/PrevSlideCommandTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/command/ReloadCommandTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/command/ReloadCommandTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/command/SaveCommandTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/command/SaveCommandTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/controller/KeyControllerTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/controller/KeyControllerTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/controller/KeyControllerTest$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/controller/KeyControllerTest$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/controller/KeyControllerTest$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/controller/KeyControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/controller/KeyControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/controller/MenuControllerTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/controller/MenuControllerTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/controller/MenuControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/controller/MenuControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/loader/DemoAccessorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/loader/DemoAccessorTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/loader/XmlParseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/loader/XmlParseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/presentationObserver/PresentationObservableTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/presentationObserver/PresentationObservableTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/slidItem/BitMapItemCreatorTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/slidItem/BitMapItemTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/slidItem/CreateSlideItemFactoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/slidItem/TextItemCreatorTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/slidItem/TextItemTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/slideViewer/SlideViewerComponentTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/slideViewer/SlideViewerComponentTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/style/StyleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nhlstenden/JabberPoint/style/StyleTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +45,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.JabberPoint">
+  <component name="RunManager" selected="JUnit.All in Jabberpoint">
     <configuration name="JabberPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nhlstenden.JabberPoint.JabberPoint" />
       <module name="Jabberpoint" />
@@ -208,8 +100,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JabberPoint" />
         <item itemvalue="JUnit.All in Jabberpoint" />
+        <item itemvalue="Application.JabberPoint" />
         <item itemvalue="JUnit.FileCommandTest.testOpenFile_assertEquals_0" />
         <item itemvalue="JUnit.FileCommandTest" />
       </list>
@@ -225,6 +117,8 @@
       <updated>1716988367387</updated>
       <workItem from="1716988371145" duration="819000" />
       <workItem from="1717622145165" duration="502000" />
+      <workItem from="1717669661262" duration="327000" />
+      <workItem from="1717676258704" duration="669000" />
     </task>
     <servers />
   </component>
@@ -235,5 +129,6 @@
     <SUITE FILE_PATH="coverage/Jabberpoint$JabberPoint.ic" NAME="JabberPoint Coverage Results" MODIFIED="1717622616733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.nhlstenden.JabberPoint.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Jabberpoint$All_in_Jabberpoint.ic" NAME="All in Jabberpoint Coverage Results" MODIFIED="1717676303610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
