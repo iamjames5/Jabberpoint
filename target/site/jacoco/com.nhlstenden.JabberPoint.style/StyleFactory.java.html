@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>StyleFactory.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Jabberpoint</a> &gt; <a href="index.source.html" class="el_package">com.nhlstenden.JabberPoint.style</a> &gt; <span class="el_source">StyleFactory.java</span></div><h1>StyleFactory.java</h1><pre class="source lang-java linenums">package com.nhlstenden.JabberPoint.style;
+
+import java.awt.Color;
+import java.awt.Font;
+
+<span class="nc" id="L6">public class StyleFactory {</span>
+  protected static BasicStyle[] styles;
+
+  public static BasicStyle getStyle(int level) {
+<span class="nc bnc" id="L10" title="All 2 branches missed.">    if (level &gt;= styles.length) {</span>
+<span class="nc" id="L11">      level = styles.length - 1;</span>
+    }
+<span class="nc" id="L13">    return styles[level];</span>
+  }
+
+  public static void createStyles() {
+<span class="nc" id="L17">    styles = new BasicStyle[5];</span>
+<span class="nc" id="L18">    BasicStyle basicStyle =</span>
+        new BasicStyle(0, Color.black, new Font(&quot;Helvetica&quot;, Font.PLAIN, 12), 12, 0);
+
+<span class="nc" id="L21">    styles[0] =</span>
+        new ColorDecorator(
+                Color.blue,
+                new IndentDecorator(
+                    20, new FontDecorator(40, new LeadingDecorator(10, basicStyle))))
+<span class="nc" id="L26">            .applyStyle(</span>
+                new BasicStyle(0, Color.black, new Font(&quot;Helvetica&quot;, Font.PLAIN, 12), 12, 0));
+
+<span class="nc" id="L29">    styles[1] =</span>
+        new ColorDecorator(
+                Color.blue,
+                new IndentDecorator(
+                    10, new FontDecorator(40, new LeadingDecorator(20, basicStyle))))
+<span class="nc" id="L34">            .applyStyle(</span>
+                new BasicStyle(0, Color.black, new Font(&quot;Helvetica&quot;, Font.PLAIN, 12), 12, 0));
+
+<span class="nc" id="L37">    styles[2] =</span>
+        new ColorDecorator(
+                Color.black,
+                new IndentDecorator(
+                    50, new FontDecorator(36, new LeadingDecorator(10, basicStyle))))
+<span class="nc" id="L42">            .applyStyle(</span>
+                new BasicStyle(0, Color.black, new Font(&quot;Helvetica&quot;, Font.PLAIN, 12), 12, 0));
+
+<span class="nc" id="L45">    styles[3] =</span>
+        new ColorDecorator(
+                Color.black,
+                new IndentDecorator(
+                    70, new FontDecorator(30, new LeadingDecorator(10, basicStyle))))
+<span class="nc" id="L50">            .applyStyle(</span>
+                new BasicStyle(0, Color.black, new Font(&quot;Helvetica&quot;, Font.PLAIN, 12), 12, 0));
+
+<span class="nc" id="L53">    styles[4] =</span>
+        new ColorDecorator(
+                Color.orange,
+                new IndentDecorator(
+                    90, new FontDecorator(24, new LeadingDecorator(10, basicStyle))))
+<span class="nc" id="L58">            .applyStyle(</span>
+                new BasicStyle(0, Color.black, new Font(&quot;Helvetica&quot;, Font.PLAIN, 12), 12, 0));
+<span class="nc" id="L60">  }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
