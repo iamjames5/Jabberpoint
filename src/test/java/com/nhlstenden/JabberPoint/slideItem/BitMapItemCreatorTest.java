@@ -2,6 +2,9 @@ package com.nhlstenden.JabberPoint.slideItem;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import com.nhlstenden.JabberPoint.slideItem.BitMapItem;
+import com.nhlstenden.JabberPoint.slideItem.BitMapItemCreator;
+import com.nhlstenden.JabberPoint.slideItem.SlideItem;
 import org.junit.jupiter.api.Test;
 
 public class BitMapItemCreatorTest {
