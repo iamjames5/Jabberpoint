@@ -21,5 +21,3 @@ Production -- main branch:
 
 The final application is deployed for use.
 jar File
-
-This link is to download our .jar file: https://storage.googleapis.com/japperpoint_accepentance/testFolder/JabberPoint-1.0-SNAPSHOT.jar
