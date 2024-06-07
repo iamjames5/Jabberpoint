@@ -2,9 +2,6 @@ package com.nhlstenden.JabberPoint.slideItem;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import com.nhlstenden.JabberPoint.slideItem.SlideItem;
-import com.nhlstenden.JabberPoint.slideItem.SlideItemCreator;
-import com.nhlstenden.JabberPoint.slideItem.SlideItemType;
 import org.junit.jupiter.api.*;
 
 public class CreateSlideItemFactoryTest {
@@ -12,7 +9,7 @@ public class CreateSlideItemFactoryTest {
   public void testSlideItemCreator_CreateTextItem_shouldBeExpect() {
     SlideItem slideItem =
         SlideItemCreator.createSlideItem(SlideItemType.TEXTITEM.toString(), 0, "Test");
-    assertInstanceOf(com.nhlstenden.JabberPoint.slideItem.TextItem.class, slideItem);
+    assertInstanceOf(TextItem.class, slideItem);
   }
 
   @Test

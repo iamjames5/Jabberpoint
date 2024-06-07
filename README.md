@@ -1,4 +1,4 @@
-## Jabberpoint
+Jabberpoint
 Jabberpoint is a program designed for creating and displaying digital presentations. It incorporates various design patterns, including command, observer, builder, and bridge.
 
 DTAP Workflow

@@ -5,8 +5,6 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-
-import com.nhlstenden.JabberPoint.slideItem.BitMapItem;
 import org.junit.jupiter.api.Test;
 
 public class BitMapItemTest {
