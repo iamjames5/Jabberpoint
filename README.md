@@ -1,4 +1,4 @@
-## Jabberpoint
+# Jabberpoint
 Jabberpoint is a program designed for creating and displaying digital presentations. It incorporates various design patterns, including command, observer, builder, and bridge.
 
 DTAP Workflow
@@ -21,5 +21,3 @@ Production -- main branch:
 
 The final application is deployed for use.
 jar File
-
-This link is to download our .jar file: https://storage.googleapis.com/japperpoint_accepentance/testFolder/JabberPoint-1.0-SNAPSHOT.jar
