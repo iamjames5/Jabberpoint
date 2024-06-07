@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE presentation SYSTEM "jabberpoint.dtd">
+<presentation>
+	<showtitle>XML-Based Presentation for Jabberpoint</showtitle>
+	<slide>
+		<title>JabberPoint XML-Demo</title>
+		<item kind="text"  level="1">You can use this file to test reload function</item>
+		<item kind="text"  level="2">Rewritten by</item>
+		<item kind="text"  level="2">Lennox and Teddy</item>
+		<item kind="text"  level="1">Navigation:</item>
+		<item kind="text"  level="2">Next slide: PgDn or Enter</item>
+		<item kind="text"  level="2">Previous slide: PgUp or up-arrow</item>
+		<item kind="text"  level="2">Quit: q or Q</item>
+	</slide>
+	<slide>
+		<title>An almost empty slide</title>
+		<item kind="text"  level="1">You can edit reload.xml and reload this slide again</item>
+		<item kind="text"  level="1">Please only edit the content in the slide, not add one more slide</item>
+		<item kind="text"  level="2">444</item>
+		<item kind="text"  level="3">555</item>
+		<item kind="text"  level="4">666</item>
+	</slide>
+	<slide>
+		<title>Laatste slide</title>
+		<item kind="text"  level="1">This is the end of the presentation!</item>
+		<item kind="text"  level="1">Have good day!</item>
+		<item kind="text"  level="1">Goodbye!</item>
+	</slide>
+</presentation>
