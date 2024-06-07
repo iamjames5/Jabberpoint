@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2feac86-4200-4400-8433-0ca81593ab06" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jabberpoint.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/loader/DemoAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/loader/DemoAccessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/command/AboutCommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/command/AboutCommandTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classpath.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/loader/DemoAccessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/loader/DemoAccessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,18 +135,18 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Jabberpoint$JabberPoint.ic" NAME="JabberPoint Coverage Results" MODIFIED="1712518040564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Jabberpoint$JabberPoint.ic" NAME="JabberPoint Coverage Results" MODIFIED="1717622616733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.nhlstenden.JabberPoint.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Jabberpoint$All_in_Jabberpoint__1_.ic" NAME="All in Jabberpoint (1) Coverage Results" MODIFIED="1717677393214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/Jabberpoint$All_in_Jabberpoint.ic" NAME="All in Jabberpoint Coverage Results" MODIFIED="1717676757845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/Jabberpoint$java_in_Jabberpoint.ic" NAME="java in Jabberpoint Coverage Results" MODIFIED="1717767030217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/Jabberpoint$JabberPoint_in_Jabberpoint.ic" NAME="JabberPoint in Jabberpoint Coverage Results" MODIFIED="1717767265256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/Jabberpoint$PresentationObservableTest.ic" NAME="PresentationObservableTest Coverage Results" MODIFIED="1717767094842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>com.nhlstenden.JabberPoint.presentationObserver.*</FILTER>
-    </SUITE>
+    <SUITE FILE_PATH="coverage/Jabberpoint$All_in_Jabberpoint.ic" NAME="All in Jabberpoint Coverage Results" MODIFIED="1717676303610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Jabberpoint$com_nhlstenden_JabberPoint_in_Jabberpoint.ic" NAME="com.nhlstenden.JabberPoint in Jabberpoint Coverage Results" MODIFIED="1717766327330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.nhlstenden.JabberPoint.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Jabberpoint$All_in_Jabberpoint__1_.ic" NAME="All in Jabberpoint (1) Coverage Results" MODIFIED="1717677393214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/Jabberpoint$PresentationObservableTest.ic" NAME="PresentationObservableTest Coverage Results" MODIFIED="1717767094842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.nhlstenden.JabberPoint.presentationObserver.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Jabberpoint$java_in_Jabberpoint.ic" NAME="java in Jabberpoint Coverage Results" MODIFIED="1717767030217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
