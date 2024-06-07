@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d2feac86-4200-4400-8433-0ca81593ab06" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jabberpoint.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/loader/DemoAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/loader/DemoAccessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/command/AboutCommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/command/AboutCommandTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/classpath.index" beforeDir="false" />
@@ -148,7 +149,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Jabberpoint$JabberPoint.ic" NAME="JabberPoint Coverage Results" MODIFIED="1717622616733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Jabberpoint$JabberPoint.ic" NAME="JabberPoint Coverage Results" MODIFIED="1712518040564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.nhlstenden.JabberPoint.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Jabberpoint$All_in_Jabberpoint.ic" NAME="All in Jabberpoint Coverage Results" MODIFIED="1717676303610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
