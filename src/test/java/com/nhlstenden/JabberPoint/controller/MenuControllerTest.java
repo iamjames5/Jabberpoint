@@ -4,11 +4,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import com.nhlstenden.JabberPoint.command.Command;
 import com.nhlstenden.JabberPoint.presentation.Presentation;
-
+import java.awt.*;
 import javax.swing.*;
 import org.junit.jupiter.api.Test;
-
-import java.awt.*;
 
 public class MenuControllerTest {
 
@@ -40,7 +38,7 @@ public class MenuControllerTest {
           }
         };
 
-    menuController.addMenuItem(menu, "Test Item", testCommand);
+    menuController.addMenuItem(menu, "Test Item");
 
     assertEquals(1, menu.getItemCount());
   }

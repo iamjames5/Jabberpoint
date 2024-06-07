@@ -1,6 +1,6 @@
 package com.nhlstenden.JabberPoint.presentation;
 
-import com.nhlstenden.JabberPoint.slidItem.Slide;
+import com.nhlstenden.JabberPoint.slideItem.Slide;
 import com.nhlstenden.JabberPoint.slideViewer.SlideViewerComponent;
 import java.io.File;
 import java.util.ArrayList;
@@ -42,6 +42,19 @@ public class Presentation implements Observable {
 
   public void setTitle(String nt) {
     showTitle = nt;
+  }
+
+  // filename setter and getter
+  public File getFilename() {
+    return file;
+  }
+
+  public void setFilename(File newFile) {
+    file = newFile;
+  }
+
+  public ArrayList<Slide> getShowList() {
+    return showList;
   }
 
   public void setShowView(SlideViewerComponent slideViewerComponent) {
@@ -103,19 +116,6 @@ public class Presentation implements Observable {
   public int exit(int n) {
     System.exit(n);
     return n;
-  }
-
-  public File getFilename() {
-    return file;
-  }
-
-  // filename setter and getter
-  public void setFilename(File newFile) {
-    file = newFile;
-  }
-
-  public ArrayList<Slide> getShowList() {
-    return showList;
   }
 
   // Observer code

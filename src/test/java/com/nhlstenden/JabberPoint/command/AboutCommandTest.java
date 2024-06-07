@@ -16,7 +16,6 @@ public class AboutCommandTest {
 
   @Mock private Presentation presentation;
   @Mock private Frame parent;
-//  @InjectMocks private AboutCommandTest.MockAboutCommand mockAboutCommand;
   @InjectMocks private AboutCommand aboutCommand;
 
   @BeforeEach
@@ -28,13 +27,15 @@ public class AboutCommandTest {
   @Test
   public void testExecute_assertDoesNotThrow_noExceptionThrown() {
     aboutCommand.setParent(parent);
-    doNothing().when(aboutCommand).showMessageDialog(any(Frame.class), anyString(), anyString(), anyInt());
+    doNothing()
+        .when(aboutCommand)
+        .showMessageDialog(any(Frame.class), anyString(), anyString(), anyInt());
 
     assertDoesNotThrow(aboutCommand::execute);
 
-    verify(aboutCommand, times(1)).showMessageDialog(any(Frame.class), anyString(), anyString(), anyInt());
+    verify(aboutCommand, times(1))
+        .showMessageDialog(any(Frame.class), anyString(), anyString(), anyInt());
   }
-
 
   @Test
   public void testGetParent_assertEquals_parent() {

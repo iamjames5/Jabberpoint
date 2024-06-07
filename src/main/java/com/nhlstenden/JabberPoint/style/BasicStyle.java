@@ -3,76 +3,73 @@ package com.nhlstenden.JabberPoint.style;
 import java.awt.Color;
 import java.awt.Font;
 
-public class BasicStyle extends StyleDecorator {
-  protected static BasicStyle[] styles; // de styles
+public class BasicStyle implements Style {
+  private int indent;
+  private Color color;
+  private Font font;
+  private int fontSize;
+  private int leading;
 
-  public BasicStyle(Style decoratedStyle) {
-    super(decoratedStyle);
+  public BasicStyle(int indent, Color color, Font font, int fontSize, int leading) {
+    this.indent = indent;
+    this.color = color;
+    this.font = font;
+    this.fontSize = fontSize;
+    this.leading = leading;
   }
 
-  public static void createStyles() {
-    styles = new BasicStyle[5];
-
-    Style basicStyleImplement = new BasicStyleImplement();
-    BasicStyle bs = new BasicStyle(basicStyleImplement);
-
-    Style s1 =
-        new BasicStyle(
-            new LeadingDecorator(
-                10,
-                new FontDecorator(
-                    40,
-                    new ColorDecorator(Color.blue, new IndentDecorator(20, basicStyleImplement)))));
-    styles[0] = s1.applyStyle(bs);
-
-    styles[1] =
-        (new BasicStyle(
-                new LeadingDecorator(
-                    20,
-                    new FontDecorator(
-                        40,
-                        new ColorDecorator(
-                            Color.blue, new IndentDecorator(10, basicStyleImplement))))))
-            .applyStyle(new BasicStyle(basicStyleImplement));
-
-    styles[2] =
-        (new BasicStyle(
-                new LeadingDecorator(
-                    10,
-                    new FontDecorator(
-                        36,
-                        new ColorDecorator(
-                            Color.black, new IndentDecorator(50, basicStyleImplement))))))
-            .applyStyle(new BasicStyle(basicStyleImplement));
-
-    styles[3] =
-        (new BasicStyle(
-                new LeadingDecorator(
-                    10,
-                    new FontDecorator(
-                        30,
-                        new ColorDecorator(
-                            Color.black, new IndentDecorator(70, basicStyleImplement))))))
-            .applyStyle(new BasicStyle(basicStyleImplement));
-
-    styles[4] =
-        (new BasicStyle(
-                new LeadingDecorator(
-                    10,
-                    new FontDecorator(
-                        24,
-                        new ColorDecorator(
-                            Color.orange, new IndentDecorator(90, basicStyleImplement))))))
-            .applyStyle(new BasicStyle(basicStyleImplement));
+  // Getters and setters for the properties
+  public int getIndent() {
+    return indent;
   }
 
-  public static BasicStyle getStyle(int level) {
-    if (level >= styles.length) {
-      level = styles.length - 1;
-    }
-    return styles[level];
+  public void setIndent(int indent) {
+    this.indent = indent;
   }
 
+  public Color getColor() {
+    return color;
+  }
+
+  public void setColor(Color color) {
+    this.color = color;
+  }
+
+  public Font getFont() {
+    return font;
+  }
+
+  public void setFont(Font font) {
+    this.font = font;
+  }
+
+  public int getFontSize() {
+    return fontSize;
+  }
+
+  public void setFontSize(int fontSize) {
+    this.fontSize = fontSize;
+  }
+
+  public int getLeading() {
+    return leading;
+  }
+
+  public void setLeading(int leading) {
+    this.leading = leading;
+  }
+
+  @Override
+  public BasicStyle applyStyle(BasicStyle basicStyle) {
+    basicStyle.setIndent(this.indent);
+    basicStyle.setColor(this.color);
+    basicStyle.setFont(this.font);
+    basicStyle.setFontSize(this.fontSize);
+    basicStyle.setLeading(this.leading);
+    return basicStyle;
+  }
+
+  @Override
   public String toString() {
     String str =
         "Indent: "
@@ -83,11 +80,9 @@ public class BasicStyle extends StyleDecorator {
             + leading
             + ", FontSize: "
             + fontSize;
-
     if (font != null) {
       str += ", Font: " + font.getFontName() + ", FontStyle: " + font.getStyle();
     }
-
     return str;
   }
 

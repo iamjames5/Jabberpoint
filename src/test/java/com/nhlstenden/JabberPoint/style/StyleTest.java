@@ -4,79 +4,64 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.awt.Color;
 import java.awt.Font;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class StyleTest {
 
-  BasicStyle baseStyle;
+  BasicStyle basicStyle;
   Style style;
 
   @BeforeEach
   public void setup() {
-    style = new BasicStyleImplement();
-    baseStyle = new BasicStyle(new BasicStyleImplement());
-    baseStyle.setColor(Color.BLACK);
-    baseStyle.setFontSize(30);
-    baseStyle.setFont(new Font("Helvetica", Font.PLAIN, 30));
+    style = new BasicStyle(0, Color.BLACK, new Font("Helvetica", Font.PLAIN, 30), 30, 0);
+    basicStyle = new BasicStyle(0, Color.BLACK, new Font("Helvetica", Font.PLAIN, 30), 30, 0);
   }
 
   @Test
-  public void testBasicStyle_BasicStyle_shouldBeEqual() {
-    assertEquals(Color.BLACK, baseStyle.getColor());
-    assertEquals(new Font("Helvetica", Font.PLAIN, 30), baseStyle.getFont());
+  public void testBaseStyle_Getters_ShouldReturnCorrectValues() {
+    assertEquals(Color.BLACK, basicStyle.getColor());
+    assertEquals(new Font("Helvetica", Font.PLAIN, 30), basicStyle.getFont());
   }
 
   @Test
-  public void testBasicStyle_getFontWithScale_shouldBeEqual() {
+  public void testBaseStyle_GetFontWithScale_ShouldReturnScaledFont() {
     float scale = 10f;
-    Font scaledFont = baseStyle.getFont(scale);
-    assertEquals(baseStyle.getFont().getSize() * scale, scaledFont.getSize(), 0.001);
+    Font scaledFont = basicStyle.getFont(scale);
+    assertEquals(basicStyle.getFont().getSize() * scale, scaledFont.getSize(), 0.001);
   }
 
   @Test
-  public void testCreatStyle_setFontStyle_shouldBeExpect() {
-    BasicStyle newStyle =
-        new BasicStyle(new FontDecorator(40, new BasicStyleImplement())).applyStyle(baseStyle);
-
+  public void testCreateStyle_SetFontStyle_ShouldApplyFontDecorator() {
+    BasicStyle newStyle = new FontDecorator(40, style).applyStyle(basicStyle);
     assertEquals(new Font("Helvetica", Font.BOLD, 40), newStyle.getFont());
   }
 
   @Test
-  public void testCreatStyle_setLeading_shouldBeExpect() {
-    //    BasicStyle newStyle = new BasicStyle(baseStyle, new LeadingDecorator(40));
-    BasicStyle newStyle = new BasicStyle(new LeadingDecorator(40, style)).applyStyle(baseStyle);
-
+  public void testCreateStyle_SetLeading_ShouldApplyLeadingDecorator() {
+    BasicStyle newStyle = new LeadingDecorator(40, style).applyStyle(basicStyle);
     assertEquals(40, newStyle.getLeading());
   }
 
   @Test
-  public void testCreatStyle_setIndent_shouldBeExpect() {
-    //    BasicStyle newStyle = new BasicStyle(baseStyle, new IndentDecorator(40));
-
-    BasicStyle newStyle = new BasicStyle(new IndentDecorator(40, style)).applyStyle(baseStyle);
-
+  public void testCreateStyle_SetIndent_ShouldApplyIndentDecorator() {
+    BasicStyle newStyle = new IndentDecorator(40, style).applyStyle(basicStyle);
     assertEquals(40, newStyle.getIndent());
   }
 
   @Test
-  public void testCreatStyle_setColor_shouldBeExpect() {
-    //    BasicStyle newStyle = new BasicStyle(baseStyle, new ColorDecorator(Color.RED));
-
-    BasicStyle newStyle =
-        new BasicStyle(new ColorDecorator(Color.RED, style)).applyStyle(baseStyle);
+  public void testCreateStyle_SetColor_ShouldApplyColorDecorator() {
+    BasicStyle newStyle = new ColorDecorator(Color.RED, style).applyStyle(basicStyle);
     assertEquals(Color.RED, newStyle.getColor());
   }
 
   @Test
-  public void testCreatStyle_setMultipleStyle_shouldBeExpect() {
-
+  public void testCreateStyle_SetMultipleStyles_ShouldApplyAllDecorators() {
     BasicStyle newStyle =
-        new BasicStyle(
-                new ColorDecorator(
-                    Color.RED,
-                    new IndentDecorator(
-                        40, new LeadingDecorator(40, new FontDecorator(40, style)))))
-            .applyStyle(baseStyle);
+        new ColorDecorator(
+                Color.RED,
+                new IndentDecorator(40, new LeadingDecorator(40, new FontDecorator(40, style))))
+            .applyStyle(basicStyle);
 
     assertEquals(new Font("Helvetica", Font.BOLD, 40), newStyle.getFont());
     assertEquals(40, newStyle.getLeading());

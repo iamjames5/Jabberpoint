@@ -17,6 +17,8 @@
 	<slide>
 		<title>An almost empty slide</title>
 		<item kind="text"  level="1">444</item>
+		<item kind="text"  level="2">555</item>
+		<item kind="text"  level="3">666</item>
 	</slide>
 	<slide>
 		<title>Achtergrond</title>
@@ -43,8 +45,12 @@
 		<title>Laatste slide</title>
 		<item kind="text"  level="1">Navigation also can be done through the menu</item>
 		<item kind="text"  level="2">Load presentation: File->Open</item>
+		<item kind="text"  level="2">You can choose reload.xml to open</item>
+		<item kind="text"  level="2">You are free to edit the content in each slide during playing to see reloading function</item>
+		<item kind="text"  level="2">But please do not add or delete any slide when the presentation is playing</item>
 		<item kind="text"  level="1"> </item>
 		<item kind="text"  level="1">This is the end of the presentation!</item>
+		<item kind="text"  level="1">Have a good day!</item>
 		<item kind="text"  level="1">Goodbye!</item>
 	</slide>
 </presentation>

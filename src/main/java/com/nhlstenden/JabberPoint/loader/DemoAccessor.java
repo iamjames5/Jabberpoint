@@ -1,8 +1,8 @@
 package com.nhlstenden.JabberPoint.loader;
 
 import com.nhlstenden.JabberPoint.presentation.Presentation;
-import com.nhlstenden.JabberPoint.slidItem.BitMapItem;
-import com.nhlstenden.JabberPoint.slidItem.Slide;
+import com.nhlstenden.JabberPoint.slideItem.BitMapItem;
+import com.nhlstenden.JabberPoint.slideItem.Slide;
 import java.io.File;
 
 /**
@@ -16,7 +16,7 @@ import java.io.File;
  * @version 1.5 2010/03/03 Sylvia Stuurman
  * @version 1.6 2014/05/16 Sylvia Stuurman
  */
-class DemoAccessor extends Accessor {
+public class DemoAccessor extends Accessor {
 
   public void loadFile(Presentation presentation, File unusedFilename) {
     presentation.setTitle("Demo Presentation");

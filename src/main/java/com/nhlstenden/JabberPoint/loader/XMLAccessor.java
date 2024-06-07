@@ -1,11 +1,11 @@
 package com.nhlstenden.JabberPoint.loader;
 
 import com.nhlstenden.JabberPoint.presentation.Presentation;
-import com.nhlstenden.JabberPoint.slidItem.BitMapItem;
-import com.nhlstenden.JabberPoint.slidItem.Slide;
-import com.nhlstenden.JabberPoint.slidItem.SlideItem;
-import com.nhlstenden.JabberPoint.slidItem.SlideItemCreator;
-import com.nhlstenden.JabberPoint.slidItem.TextItem;
+import com.nhlstenden.JabberPoint.slideItem.BitMapItem;
+import com.nhlstenden.JabberPoint.slideItem.Slide;
+import com.nhlstenden.JabberPoint.slideItem.SlideItem;
+import com.nhlstenden.JabberPoint.slideItem.SlideItemCreator;
+import com.nhlstenden.JabberPoint.slideItem.TextItem;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;

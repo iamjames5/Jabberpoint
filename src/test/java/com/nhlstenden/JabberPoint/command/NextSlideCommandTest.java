@@ -3,7 +3,7 @@ package com.nhlstenden.JabberPoint.command;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import com.nhlstenden.JabberPoint.presentation.Presentation;
-import com.nhlstenden.JabberPoint.slidItem.Slide;
+import com.nhlstenden.JabberPoint.slideItem.Slide;
 import org.junit.jupiter.api.Test;
 
 public class NextSlideCommandTest {

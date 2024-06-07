@@ -1,7 +1,7 @@
 package com.nhlstenden.JabberPoint.slideViewer;
 
 import com.nhlstenden.JabberPoint.presentation.Presentation;
-import com.nhlstenden.JabberPoint.slidItem.Slide;
+import com.nhlstenden.JabberPoint.slideItem.Slide;
 import java.awt.*;
 import javax.swing.*;
 

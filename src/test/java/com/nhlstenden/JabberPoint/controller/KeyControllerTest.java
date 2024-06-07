@@ -1,6 +1,8 @@
 package com.nhlstenden.JabberPoint.controller;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 
 import com.nhlstenden.JabberPoint.presentation.Presentation;
 import java.awt.*;
@@ -56,19 +58,13 @@ public class KeyControllerTest {
 
   @Test
   public void testKeyPressedExit_assertEquals_0() {
-    Presentation presentation = new Presentation();
-    KeyController keyController = new KeyController(presentation);
-
-    Component component = new Component() {};
-
-    keyController.keyPressed(
+    Component component = mock(Component.class);
+    Presentation mockPresentation = mock(Presentation.class);
+    KeyController keyController = new KeyController(mockPresentation);
+    KeyEvent keyEvent =
         new KeyEvent(
-            component, KeyEvent.KEY_PRESSED, System.currentTimeMillis(), 0, KeyEvent.VK_Q, ' '));
-
-    assertEquals(
-        0,
-        presentation.getSlideNumber(),
-        "Expected slide number should be 0 after calling exit method");
+            component, KeyEvent.KEY_PRESSED, System.currentTimeMillis(), 0, KeyEvent.VK_Q, 'Q');
+    keyController.keyPressed(keyEvent);
+    verify(mockPresentation).exit(0);
   }
-
 }
