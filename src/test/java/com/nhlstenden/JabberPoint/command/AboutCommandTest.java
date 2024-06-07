@@ -16,7 +16,6 @@ public class AboutCommandTest {
 
   @Mock private Presentation presentation;
   @Mock private Frame parent;
-  //  @InjectMocks private AboutCommandTest.MockAboutCommand mockAboutCommand;
   @InjectMocks private AboutCommand aboutCommand;
 
   @BeforeEach

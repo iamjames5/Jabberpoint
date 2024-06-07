@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2feac86-4200-4400-8433-0ca81593ab06" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/loader/DemoAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhlstenden/JabberPoint/loader/DemoAccessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/command/AboutCommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nhlstenden/JabberPoint/command/AboutCommandTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/classpath.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/loader/DemoAccessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhlstenden/JabberPoint/loader/DemoAccessor.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,10 +104,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.nhlstenden.JabberPoint in Jabberpoint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Jabberpoint" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nhlstenden.JabberPoint.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nhlstenden.JabberPoint" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in Jabberpoint" />
         <item itemvalue="Application.JabberPoint" />
+        <item itemvalue="JUnit.com.nhlstenden.JabberPoint in Jabberpoint" />
         <item itemvalue="JUnit.FileCommandTest.testOpenFile_assertEquals_0" />
         <item itemvalue="JUnit.FileCommandTest" />
       </list>
@@ -119,6 +140,7 @@
       <workItem from="1717622145165" duration="502000" />
       <workItem from="1717669661262" duration="327000" />
       <workItem from="1717676258704" duration="669000" />
+      <workItem from="1717764242381" duration="3401000" />
     </task>
     <servers />
   </component>
@@ -130,5 +152,8 @@
       <FILTER>com.nhlstenden.JabberPoint.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Jabberpoint$All_in_Jabberpoint.ic" NAME="All in Jabberpoint Coverage Results" MODIFIED="1717676303610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Jabberpoint$com_nhlstenden_JabberPoint_in_Jabberpoint.ic" NAME="com.nhlstenden.JabberPoint in Jabberpoint Coverage Results" MODIFIED="1717766327330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.nhlstenden.JabberPoint.*</FILTER>
+    </SUITE>
   </component>
 </project>
